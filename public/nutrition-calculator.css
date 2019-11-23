@@ -1,0 +1,254 @@
+body{
+    margin:0;
+    padding:0;
+}
+/*
+nav.css: the main menu, the two top menus, and the logo
+*/
+
+/* styling for the complete navigation container */ 
+#main-nav-wrapper{
+    height:60px;
+    display:flex;    
+    /* font-size:16px; */
+
+    margin-top:50px;
+}
+
+button{
+    width:200px;
+    background:#FFBC0D;
+    color:#292929;
+    padding:13px 25px;
+    border-radius:7px;
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    /* contrast:Aa 8.63; */
+}
+
+
+/* styling for the logo-image */
+.top-img-logo{
+    width:8%;
+}
+
+
+
+.nav-section{
+    /* width:90%; */
+    /* border:1px solid blue; */
+}
+.top-menu-1{
+    width:50%;
+    /* border:1px solid green; */
+}
+.top-menu-1{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    margin-left:30px;
+}
+.top-menu-1 li{
+    padding:20px 15px 20px 20px;
+    /* padding-left:30px; */
+    font-size:14px;
+}
+.top-menu-1 a{
+    text-decoration:none;
+    color:#292929;
+    font-family:sans-serif;
+    cursor:grabbing;
+}
+
+
+.top-menu-2{
+    width:50%;
+    /* border:1px solid purple; */
+}
+.top-menu-2{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    margin-left:30px;  
+    /* border:1px solid orangered; */
+}
+.top-menu-2 li{
+    padding:20px 15px 20px 20px;
+    font-size:14px;
+}
+.top-menu-2 a{
+    text-decoration:none;
+    color:#292929;
+    font-family:sans-serif;
+    cursor:grabbing;
+}
+
+.main-menu{
+   /* border:1px solid blue; */
+    margin-bottom:20px;
+    margin-left:140px;
+}
+.main-menu ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    justify-content:flex-start;
+}
+.main-menu li{
+    list-style-type:none;
+    color:#292929;
+    padding:20px 15px 20px 20px;
+    font-size:18px;
+}
+.main-menu a{
+    text-decoration:none;
+    color:#292929;
+    font-family:sans-serif;
+    cursor:grabbing;
+}
+
+
+
+
+
+#main-content{
+    margin-top:30px;
+    /* border:1px solid orange; */
+    /* background-color:tan; */
+}
+.h2header{    
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bolder;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    color:#292929;
+}
+.paragraph{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:400;
+    line-height: 1.2;
+    color:#292929;
+    /* font-size: 1.5rem; */
+}
+.six-offers{
+    color:#292929;
+    padding:15px 15px;
+    /* margin:30px 5px; */
+    /* border:1px solid #fff; */
+    /* background-color:aqua; */
+}
+.row1-3columns{
+    display:flex;
+    flex-direction:row;
+    padding:30px 30px;
+    /* justify-content:space-evenly; */
+    /* margin-left:60px; */
+    /* border:1px solid #000000; */
+    /* background-color:#eee; */
+
+    /* width:100%; */
+}
+
+
+
+
+
+footer{
+    /* display:flex; */        
+    /* border:1px solid orange; */
+}
+
+
+.share-this-page{
+    /* padding:50px 20px; */
+    text-align:center;
+    color:orange;
+    /* border:1px solid orange; */
+    margin:50px 50px;
+}
+
+
+footer section{
+    /* margin:20px 20px; */
+    /* width:100%; */
+    display:flex;
+    flex-direction:row;
+    /* padding:30px 30px; */
+    /* justify-content:space-around; */
+    /* margin-left:20px; */
+    /* justify-content:space-around; */
+    /* border:1px solid blue; */
+}
+
+
+.six-footer-menus{
+    width:100%;
+    padding:20px 20px;
+    /* border:1px solid green; */
+}
+.six-footer-menus ul{
+    /* padding:30px 30px; */
+    /* border:1px solid blue; */
+}
+.six-footer-menus li{
+    list-style-type:none;
+    font-size:14px;
+    font-weight:500;
+    /* border:1px solid red; */
+    text-decoration:none;
+    color:#292929;
+    font-family:Helvetica;
+}
+.six-footer-menus a{
+    padding:0;
+    text-decoration:none;
+    padding:5px 5px;
+    
+    font-size:14px;
+    font-weight:500;
+    /* border:1px solid red; */
+    text-decoration:none;
+    color:#292929;
+    font-family:Helvetica;
+}
+
+
+/* Begin the main footer menu @the bottom of page */
+.main-footer-section{
+    display:flex;    
+    /* border:1px solid blue; */
+}
+.main-footer-menu{
+    /* width:70%; */
+    display:flex;
+    /* padding:50px 50px; */
+    /* text-decoration:none; */
+    /* list-style-type:none; */
+} 
+.main-footer-menu li{
+    font-size:14px;
+    font-weight:500;
+    /* border:1px solid red; */
+    text-decoration:none;
+    color:#292929;
+    font-family:Helvetica;
+    padding:20px 20px;
+    color:black;
+    /* list-style:none; */
+}
+.main-footer-menu a{
+    font-size:14px;
+    font-weight:500;
+    /* border:1px solid red; */
+    text-decoration:none;
+    color:#292929;
+    font-family:Helvetica;
+    text-decoration:none;
+    /* list-style-type:none; */
+    /* color:black; */
+}
+.copyright{
+    display:flex;
+    /* width:30%; */
+}
+/* End the main footer menu @the bottom of page */

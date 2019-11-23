@@ -1,0 +1,65 @@
+@import "cssreset.css";
+@import "nav.css";
+@import "footer.css";
+@import "main-content.css";
+@import "header.css";
+@import "carosel.css";
+
+
+html{
+    background-color:#000000;
+}
+
+body{
+    background-color:#ffffff;
+}
+
+.container{
+    max-width:1400px;
+    margin:0 auto;
+}
+
+
+/* h1{
+    color:#292929;
+    font-size:150%;
+}
+h2{
+    font-size:150%;
+    color:#cf0e0e;
+}
+h3{
+    font-size:150%;
+    color:#5332c9;
+}
+p{
+    font-size:16px;
+    color:#73d616;
+} */
+
+/* li{
+    font-size:16px;
+    color:#73d616;
+}
+a{
+    font-size:16px;
+    color:#73d616;
+} */
+
+
+
+/* .container{
+    max-width:1000px;
+    margin:0 auto;
+} */
+
+button{
+    width:200px;
+    background:#FFBC0D;
+    color:#292929;
+    padding:13px 25px;
+    border-radius:7px;
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    /* contrast:Aa 8.63; */
+}

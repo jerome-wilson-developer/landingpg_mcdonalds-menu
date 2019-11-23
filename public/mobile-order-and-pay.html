@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <title>McDonald's Clone Landing Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+
+<style type="text/css">
+body{
+    margin:0;
+    padding:0;
+    background-color:#ffffff;
+}
+/*
+nav.css: the main menu, the two top menus, and the logo
+*/
+
+/* styling for the complete navigation container */ 
+#main-nav-wrapper{
+    height:60px;
+    display:flex;    
+    /* font-size:16px; */
+
+    margin-top:50px;
+}
+
+/* styling for the logo-image */
+.top-img-logo{
+    width:8%;
+}
+
+
+
+.nav-section{
+    /* width:90%; */
+    /* border:1px solid blue; */
+}
+.top-menu-1{
+    width:50%;
+    /* border:1px solid green; */
+}
+.top-menu-1{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    margin-left:30px;
+}
+.top-menu-1 li{
+    padding:20px 15px 20px 20px;
+    /* padding-left:30px; */
+    font-size:14px;
+}
+.top-menu-1 a{
+    text-decoration:none;
+    color:#292929;
+    font-family:sans-serif;
+    cursor:grabbing;
+}
+
+
+.top-menu-2{
+    width:50%;
+    /* border:1px solid purple; */
+}
+.top-menu-2{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    margin-left:30px;  
+    /* border:1px solid orangered; */
+}
+.top-menu-2 li{
+    padding:20px 15px 20px 20px;
+    font-size:14px;
+}
+.top-menu-2 a{
+    text-decoration:none;
+    color:#292929;
+    font-family:sans-serif;
+    cursor:grabbing;
+}
+
+.main-menu{
+   /* border:1px solid blue; */
+    margin-bottom:20px;
+    margin-left:140px;
+}
+.main-menu ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    justify-content:flex-start;
+}
+.main-menu li{
+    list-style-type:none;
+    color:#292929;
+    padding:20px 15px 20px 20px;
+    font-size:18px;
+}
+.main-menu a{
+    text-decoration:none;
+    color:#292929;
+    font-family:sans-serif;
+    cursor:grabbing;
+}
+
+
+#main-content{
+    margin-top:30px;
+    background-color:#f9f9f9;
+}
+
+.calculator{
+    display:flex;
+    flex-direction:row;
+    /* margin-left:300px; */
+    text-align:center;
+}
+
+.paragraph{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:400;
+    line-height: 1.2;
+    color:#292929;
+}
+.calorie-diet{
+    color:#292929;
+    padding:0px 30px;
+    margin:20px 32px;
+    border:1px solid #333333;
+    border-radius:5px;
+    background-color:#ffffff;
+}
+
+
+.img-row1{
+    margin:0px 0px 118px;
+    padding:0px 30px;
+    /* background-color:#f9f9f9; */
+}
+.imgTitle{
+    columns: #333333;
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+
+.row-4columns{
+    display:flex;
+    flex-direction:row;
+    /* margin-left:100px; */
+    padding:30px 30px;
+    /* background-color:#ffffff; */
+}
+
+
+
+.important-notes{
+    font-size:12px; 
+    padding:5px 50px; 
+    color:grey; 
+    font-family:Arial, Helvetica, sans-serif;
+
+
+
+footer{
+    /* display:flex; */        
+    /* border:1px solid orange; */
+}
+
+
+.share-this-page{
+    /* padding:50px 20px; */
+    text-align:center;
+    color:orange;
+    /* border:1px solid orange; */
+    margin:50px 50px;
+}
+
+
+footer section{
+    /* margin:20px 20px; */
+    /* width:100%; */
+    display:flex;
+    flex-direction:row;
+    /* padding:30px 30px; */
+    /* justify-content:space-around; */
+    /* margin-left:20px; */
+    /* justify-content:space-around; */
+    /* border:1px solid blue; */
+}
+
+
+.six-footer-menus{
+    width:100%;
+    padding:20px 20px;
+    /* border:1px solid green; */
+}
+.six-footer-menus ul{
+    /* padding:30px 30px; */
+    /* border:1px solid blue; */
+}
+.six-footer-menus li{
+    list-style-type:none;
+    font-size:14px;
+    font-weight:500;
+    /* border:1px solid red; */
+    text-decoration:none;
+    color:#292929;
+    font-family:Helvetica;
+}
+.six-footer-menus a{
+    padding:0;
+    text-decoration:none;
+    padding:5px 5px;
+    
+    font-size:14px;
+    font-weight:500;
+    /* border:1px solid red; */
+    text-decoration:none;
+    color:#292929;
+    font-family:Helvetica;
+}
+
+
+/* Begin the main footer menu @the bottom of page */
+.main-footer-section{
+    display:flex;    
+    /* border:1px solid blue; */
+}
+.main-footer-menu{
+    /* width:70%; */
+    display:flex;
+    /* padding:50px 50px; */
+    /* text-decoration:none; */
+    /* list-style-type:none; */
+} 
+.main-footer-menu li{
+    font-size:14px;
+    font-weight:500;
+    /* border:1px solid red; */
+    text-decoration:none;
+    color:#292929;
+    font-family:Helvetica;
+    padding:20px 20px;
+    color:black;
+    /* list-style:none; */
+}
+.main-footer-menu a{
+    font-size:14px;
+    font-weight:500;
+    /* border:1px solid red; */
+    text-decoration:none;
+    color:#292929;
+    font-family:Helvetica;
+    text-decoration:none;
+    /* list-style-type:none; */
+    /* color:black; */
+}
+.copyright{
+    display:flex;
+    /* width:30%; */
+}
+/* End the main footer menu @the bottom of page */
+
+
+
+</style>
+</head>
+
+
+<body>
+<div id="main-wrapper">
+<section style="display:flex; margin:0; padding:0;">
+    <article style="width:33%; text-align:center; font-family:Arial, Helvetica, sans-serif; margin:0; padding:0; border-right:1px solid black;"> 
+        <div>
+            <p style="font-size:14x; font-family:Arial, Helvetica, sans-serif;color:#292929;">
+                Below is a clone of McDonald's restaurant website
+            </p>
+                <a href="https://github.com/jerome-wilson-developer/personal-brand-portfolio" style="font-size:14; padding:5px 10px; text-decoration:none; color:white; background-color:#000000; border-radius:5px;">github code</a>            
+                <a href="https://www.mcdonalds.com/us/en-us.html" style="font-size:14px; padding:5px 10px; text-decoration:none; color:white; background-color:#000000; border-radius:5px;">clone source</a>                
+        </div>
+    </article>
+
+<!-- add 3 links to showcase 3 more clones of corporate websites -->
+<article style="width:33%; text-align:center; font-family:Arial, Helvetica, sans-serif; margin:0; padding:0; border-right:1px solid black;"> 
+    <div>
+        <p style="font-size:14px; font-family:Arial, Helvetica, sans-serif;color:#000000;">
+            more Corporate website clones
+        </p>
+        <a href="https://jerome-wilson-developer.github.io/clone-Netflix/" style="font-size:14px; padding:5px 10px; text-decoration:none; color:white; background-color:black; border-radius:5px;">clone: Netflix.com</a>
+        <a href="https://wordpress.com/" style="font-size:14px; padding:5px 10px; text-decoration:none; color:white; background-color:black; border-radius:5px;">clone: Wordpress.com</a>            
+    </div>
+</article>
+
+<!-- <div style="width:100%;"> -->
+<article style="width:33%; text-align:left; font-family:Arial, Helvetica, sans-serif;"> 
+        <div style="width:100%; padding:15px 20px 0px 20px;">
+            <p style="margin-top:0px; font-size:14px; font-weight:500; font-family:Arial, Helvetica, sans-serif;color:#292929;">
+                <span style="font-size:14px; font-weight:600; font-family:Arial, Helvetica, sans-serif;color:#292929;">These clones are for Demo Purposes Only.
+                </span> 
+            <br>No infringements are intended against any corporate copyrights, trademarks, intellectual properties, or other proprietary assets.
+            </p>
+        </div> 
+</article> 
+</section>
+<!-- end disclaimer announcing no intention of mcdonald proprietary infringements -->
+
+<div><hr/></div>
+
+<!-- begin navigation for the top-menu-1, top-menu-2, and the main-menu -->
+<!-- add mcdonald's golden arches logo -->
+<nav id="main-nav-wrapper">
+    <div class="top-img-logo">
+        <section>
+            <img src="./img/m-logo_108x108.jpg.png" />
+        </section>
+    </div>
+    
+    <!-- begin top-menu-1 section -->
+        <ul class="top-menu-1">
+            <a href="#"><li>Language</li></a>
+            <a href="#"><li>Join Us</li></a>
+            <a href="#"><li>Careers</li></a>
+        </ul>
+    <!-- end top-menu-1 section -->
+    
+    <!-- begin top-menu-2 section -->
+        <ul class="top-menu-2">
+            <a href="#"><li>Search</li></a>
+            <a href="#"><li>3531 Flat Shoals Rd</li></a>
+            <a href="#"><li>Change</li></a>
+        </ul>
+    <!-- end top-menu-2 section -->
+</nav>
+   
+<!-- begin main-menu section -->
+<nav class="main-menu">
+    <ul>
+        <a href="#"><li>Our Menu</li></a>
+        <a href="#"><li>About Our Food</li></a>
+        <a href="#"><li>Deals and Our App</li></a>
+        <a href="#"><li>Trending Now</li></a>
+        <a href="#"><li>Locate</li></a>
+    </ul>
+</nav>
+<!-- end main-menu section -->
+<!-- end navigation for the top-menu-1, top-menu-2, and the main-menu sections -->
+</section>
+<!-- end the header-section container -->
+
+
+
+
+
+
+
+
+
+<header>
+    <h1>Mobile Order & Pay </h1>
+    <div>
+
+
+        <img src="img/mobile-pay_header6.jpg" />
+
+
+    </div>    
+    <p>Mobile Order & Pay at participating McDonald's. McD App download and registration required.</p>  
+</header>
+
+
+<main id="main-content">
+
+    <section>
+        <h2>Three Easy Steps to Order Through the McDonald’s App</h2>
+
+        <div class="row1-3columns">
+            <img src="img/mobile-pay_order_760x508-1.jpg" alt=""/> 
+            <h2>Order On Your Time</h2>
+                <p>Use our App to pick out your favorite McDonald’s items a la carte or make a meal. Or choose from available deals using the “Add Deal to Mobile Order” button.
+                </p>
+        </div>
+
+        <div class="row-3columns">
+            <img src="img/mobile-pay_pay_760x508-2.jpg" alt=""/> 
+            <h2>Pay
+            </h2>
+                <p>Pay using any major payment card. Your card will not be charged until you check in. You can add or remove a payment card using the Checkout and My Account screens.
+                </p>
+        </div>
+
+        <div class="row-3columns">
+            <img src="img/mobile-pay_pickup_760x508-3.jpg" alt=""/>
+            <h2>Pick Up On Your Terms</h2>
+            <p>Check in at any participating McDonald’s restaurant to pick up your meal however you want—get your food brought to you Curbside, avoid the line Inside the Restaurant or grab it in the Drive Thru.                    
+            </p>
+        </div>
+        <div>
+
+            <h2>Download the McDonald’s App for iOS and Android.</h2>
+
+        </div>
+    </section>
+
+
+
+    <section>
+        <h2>Three Easy Ordering & Pickup Options</h2>
+        <p>Since our App can automatically detect your proximity to any restaurant location, you can pick up your meal from any participating McDonald’s you want after you place your order.            
+        </p>
+
+        <div class="row1-3columns">
+            <img src="img/mobile-pay_Curbside_Options_3-col.jpg" alt=""/> 
+            <h2>Curbside</h2>
+                <p>The ultimate experience—avoid the line and get your order delivered Curbside at your parking spot.
+                </p>
+        </div>
+
+        <div class="row-3columns">
+            <img src="img/mobile-pay_lobby_Inside_Options_3-col.jpg" alt=""/> 
+            <h2>Inside the Restaurant</h2>
+                <p>Make your arrival Inside the Restaurant of your choice, avoid the line and enjoy your food for dine-in or take-out.
+                </p>
+        </div>
+
+        <div class="row-3columns">
+            <img src="img/mobile-order_drivethru_760x508-3.jpg" alt=""/> 
+            <h2>Drive Thru</h2>
+                <p>Easily check in at the Drive Thru speaker with your 4-digit code to confirm your order.                    
+                </p>
+        </div>
+    </section>
+
+    <section style="margin-top:140px;">
+            <h2>Mobile Order & Pay FAQs</h2>
+            <p style="font-size:36px; font-family:Arial, Helvetica, sans-serif;">How do I know if McDonald’s Mobile Order & Pay is available in my area?                
+            </p>
+            <p>Make sure you turn on location services so that we can show you all of the available features in the McDonald’s App. Mobile Order & Pay will appear in the McDonald’s App as a feature when you’re within 5 miles of a McDonald’s restaurant that offers Mobile Order & Pay.
+            </p>
+            <p>Within the location map, after tapping on a restaurant icon, the white detail box arrow will also indicate if Mobile Order & Pay is available at a particular location. If the restaurant is participating, “Order Here” will appear in black letters at the bottom of the detail page, allowing you to tap it and begin the order. If not, “Order Here” will appear in gray letters, indicating that Mobile Order & Pay is not enabled at that location.
+            </p>
+
+            <p style="font-size:36px; font-family:Arial, Helvetica, sans-serif;">How do I complete and pick up my order?             
+                </p>
+                <p>You can complete and pick up your McDonald’s order at any participating restaurant. When you arrive at a participating McDonald’s restaurant, you need to check in and choose how you want to pick up your order—pick up Curbside, Inside the Restaurant or Drive Thru. These options may vary by restaurant and time of day. When you check in with your preferred pickup method at the restaurant, your mobile order is completed and your registered payment card is charged by the restaurant.
+                <p>Remember, never use the McDonald’s App while driving! Only check in when you are safely stopped at a McDonald’s restaurant, and make sure your location services settings are turned on. If you have any questions or are unsure of what to do, you can always see a crew member inside the restaurant and give them your mobile order code.
+                </p>
+
+                <p style="font-size:36px; font-family:Arial, Helvetica, sans-serif;">How do I know if McDonald’s Mobile Order & Pay is available in my area?                
+                    </p>
+                    <p>Make sure you turn on location services so that we can show you all of the available features in the McDonald’s App. Mobile Order & Pay will appear in the McDonald’s App as a feature when you’re within 5 miles of a McDonald’s restaurant that offers Mobile Order & Pay.
+                    Within the location map, after tapping on a restaurant icon, the white detail box arrow will also indicate if Mobile Order & Pay is available at a particular location. If the restaurant is participating, “Order Here” will appear in black letters at the bottom of the detail page, allowing you to tap it and begin the order. If not, “Order Here” will appear in gray letters, indicating that Mobile Order & Pay is not enabled at that location.
+                    </p>
+
+                    <p style="font-size:36px; font-family:Arial, Helvetica, sans-serif;">Can I add a McDonald’s deal or promotion to my Mobile Order?               
+                        </p>
+                        <p>If a Deal is available for redemption through        Mobile Order & Pay, you will see an “Add Deal to Mobile Order” button below the code when viewing the Deal in the McDonald’s App. To redeem the Deal, choose the “Add Deal to Mobile Order” button then customize the items in this order. Choose “Add To Order” to add the Deal to your bag. View some of our current deals and promotions.
+                        </p>
+
+                        <p style="font-size:36px; font-family:Arial, Helvetica, sans-serif;">Will I get McCafé® Rewards for McCafé beverages I purchase via Mobile Order & Pay?   
+                            </p>
+                            <p>
+                            Yes, you will get McCafé® Rewards for all eligible McCafé beverages you purchase within a mobile order.          
+                            </p>
+                            
+
+                            <p style="font-size:36px; font-family:Arial, Helvetica, sans-serif;">Can I register an Arch Card® to use with Mobile Order & Pay?
+                                </p>
+                                <p>                                
+                                You cannot register an Arch Card® for automatic payment of your mobile orders at this time. Learn more about the Arch Card®.
+                                </p>
+
+                                <p style="font-size:36px; font-family:Arial, Helvetica, sans-serif;">How do I add, remove, and edit payment card information?
+                                    </p>
+                                    <p> 
+                                    You can only add or remove a payment card from the Checkout and My Account screens. To register a payment card, simply enter details as prompted on the form and choose ‘Save.’ To remove a payment card, simply swipe left on your phone screen. At this time, we do not allow editing of payment card information.
+                                    </p>
+
+                                    <p style="font-size:36px; font-family:Arial, Helvetica, sans-serif;">Who am I purchasing my order from?      
+                                        </p>
+                                        <p>
+                                                Most McDonald's restaurants are owned and operated by independent franchisees. Some restaurants are owned and operated by subsidiaries of McDonald’s USA, LLC. When you finalize your order at check in, you are purchasing your order directly from the restaurant where you check in.    
+                                        </p>
+
+
+            <h2>
+                Download the McDonald’s App for <a>iOS</a> and <a>Android.</a>
+            </h2>               
+    </section>
+
+
+    <section>
+        <article>
+        <img src="img/mobile-pay_deals_featured_desktop_404x176-deals.jpg" alt="kdjlfjsdlkfjsf" />
+            <h3>Deals</h3>
+                <p>Check our App for exclusive deals.</p>
+                <a href="#">Learn more</a>
+        </article>
+
+        <article>
+            <img src="img/mobile-pay_trending_featured_desktop_404x176-trending.jpg" />
+            <h3>See What’s Trending Now 
+                </h3>
+                <p>Check out promotions, events, new products, specials and more.</p>
+                <a href="#">Learn more</a>
+        </article>
+
+        <article>
+                <img src="img/mobile-pay_emaillist_featured_desktop_404x176-email-signup.jpg" alt="kdjlfjsdlkfjsf" />
+                <h3>Join Our Email List 
+                    </h3>
+                    <p>Get news, promotions and more delivered right to your inbox.</p>
+                    <a href="#">Learn more</a>
+        </article>
+    </section>
+</main>
+
+
+
+
+
+
+<section class="share-this-page">
+        <div>
+                <h2>Share This Page</h2>
+                    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fwww.mcdonalds.com%252Fus%252Fen-us.html&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_US">
+
+                        <img src="./img/facebook_icon.png" alt="facebook-icon"/>
+                        <!-- <img src=<i class="fab fa-facebook"></i> alt="facebook-icon"/> -->
+                    </a>
+                    <a href="https://www.twitter.com/">
+
+                        <img src="./img/twitter_icon.png" alt="facebook-icon"/>
+                        <!-- <img src=<i class="fab fa-twitter"></i> alt="twitter-icon"/> -->
+                    </a>
+        </div>
+    </section>
+    
+
+
+
+<footer>
+    <section class="top-footer-menu">
+        <ul class="six-footer-menus">
+            <p>About Us</p>
+            <a href="#"><li>Our History</li></a>
+            <a href="#"><li>Leadership Team</li></a>
+            <a href="#"><li>Values in Action</li></a>
+            <a href="#"><li>Investor Relations</li></a>
+            <a href="#"><li>News and Notifications</li></a>
+            <a href="#"><li>Franchise Info</li></a>
+            <a href="#"><li>Real Estate</li></a>
+            <a href="#"><li>Recalls and Alerts</li></a>
+            <a href="#"><li>Digital Accessibility</li></a>
+        </ul>
+        <ul class="six-footer-menus">
+            <p>Careers</p>
+            <a href="#"><li>Education Opportunity</li></a>
+            <a href="#"><li>Employee Perks</li></a>
+            <a href="#"><li>Meet Our People</li></a>
+            <a href="#"><li>Working with Us</li></a>
+            <a href="#"><li>Apply Now</li></a>
+        </ul>
+        <ul class="six-footer-menus">
+            <p>Services</p>
+            <a href="#"><li>Wi-Fi</li></a>
+            <a href="#"><li>Arch Card</li></a>
+            <a href="#"><li>PlayPlaces and Parties</li></a>
+            <a href="#"><li>McDelivery</li></a>
+            <a href="#"><li>Mobile Order and Pay</li></a>
+        </ul>
+        <ul class="six-footer-menus">
+            <p>Community</p>
+            <a href="#"><li>RMHC</li></a>
+            <a href="#"><li>McDonald's International</li></a>
+            <a href="#"><li>Black and Positively Golden</li></a>
+        </ul>
+        <ul class="six-footer-menus">
+            <p href="#">Contact Us</p>
+            <a href="#"><li>Arch Card</li></a>
+            <a href="#"><li>Donations</li></a>
+            <a href="#"><li>Employment</li></a>
+            <a href="#"><li>Mobile App</li></a>
+            <a href="#"><li>Restaurant Feedback</li></a>
+        </ul>
+    </section>
+
+
+
+<!-- Begin social-media-icons-section and googleplay-apple-apps-download section -->
+    <section class="6-social-media-icons">
+
+<!-- Begin 6-social-media-icons section -->
+        <div class="6-social-media-icons" align="left">
+            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fwww.mcdonalds.com%252Fus%252Fen-us.html&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_US">
+
+                <img src="./img/facebook_icon.png" alt="facebook-icon"/>
+                <!-- <img src=<i class="fab fa-facebook"></i> alt="facebook-icon"/> -->
+            </a>
+            <a href="https://twitter.com/intent/tweet?text=https://www.mcdonalds.com/us/en-us.html">
+
+                <img src="./img/twitter_icon.png" alt="facebook-icon"/>
+                <!-- <img src=<i class="fab fa-twitter"></i> alt="twitter-icon"/> -->
+            </a>
+            <a href="https://www.youtube.com/c/McDonalds">
+
+                <img src="./img/youtube_icon.png" alt="facebook-icon"/>
+                <!-- <img src=<i class="fab fa-youtubes"></i> alt="youtube-icon"/> -->
+            </a>
+            <a href="https://www.instagram.com/McDonalds/">
+
+                <img src="./img/pinterest_icon.png" alt="facebook-icon"/>
+                <!-- <img src=<i class="fab fa-instagram"></i> alt="instagram-icon"/> -->
+            </a>
+            <a href="https://mcdonalds.tumblr.com/">
+
+                <img src="./img/linkedin_icon.png" alt="facebook-icon"/>
+                <!-- <img src=<i class="fab fa-tumblr"></i> alt="tumbler-icon"/> -->
+            </a>
+            <a href="https://open.spotify.com/user/mcdonalds">
+
+                <img src="./img/google_icon.png" alt="facebook-icon"/>
+                <!-- <img src=<i class="fab fa-spotify"></i> alt="spotify-icon"/> -->
+            </a>
+        </div>
+<!-- end 6-social-media-icons section -->
+
+
+<!-- Begin googleplay-apple-download section -->
+        <div class="googleplay-apple-apps" style="margin-left:350px;">
+            <a href="https://play.google.com/store/apps/details?id=com.mcdonalds.app&hl=en">
+
+                <img src="./img/playstore.png" alt="googleplay-download" style="margin-right:20px;"/>
+                <!-- <img src="fa-googleplay" alt="googleplay-download" style="margin-right:20px;"/> -->
+            </a>
+            <a href="https://apps.apple.com/us/app/mcdonalds/id922103212">
+
+                <img src="./img/appstore.png" alt="appleplay-download" style="margin-right:20px;"/>
+                <!-- <img src="https://apps.apple.com/us/app/mcdonalds/id922103212" alt="appleplay-download"/> -->
+            </a>
+        </div>
+<!-- end googleplay-apple-download section -->
+    </section>
+<!-- end social-media-icons-section and googleplay-apple-apps-download section  -->
+
+    <hr/>
+
+    <section class="main-footer-section">
+        <ul class="main-footer-menu">
+            <a href="#"><li>Contact Us</li></a>
+            <a href="#"><li>Privacy(Updated)</li></a>
+            <a href="#"><li>Terms and Conditions</li></a>
+            <a href="#"><li>Accessibility</li></a>
+        </ul>
+        <div class="copyright">
+            <img class="img-logo" src="./img/m-logo_108x108.jpg.png" />
+            <p>© 2017 - 2019 McDonald's. All Rights Reserved</p>
+        </div>
+    </section>
+</footer>
+
+    </div> 
+</body>
+</html>
+    
+
+
+
+ 
+

@@ -1,0 +1,110 @@
+footer{
+    margin: 0;
+    padding: 0;   
+    border:1px solid blue;
+}
+.share-this-page{
+    /* padding:50px 20px; */
+    text-align:center;
+    color:orange;
+    /* border:1px solid orange; */
+    margin:50px 50px;
+}
+
+
+footer .top-footer-menu{
+    padding-right: 30px;
+}
+footer section .top-footer-menus ul p{
+    color:#524B29; 
+    font-size: 85px;
+}
+
+footer section{
+    display:flex;
+    flex-direction:row;
+    /* padding:30px 30px; */
+    /* justify-content:space-around; */
+    /* margin-left:20px; */
+    /* justify-content:space-around; */
+    border:1px solid blue;
+}
+
+
+.six-footer-menus{
+    border:orangered 1px solid; 
+    margin-left:25px;
+    /* padding:70px 70px; */
+    width:100%;
+    padding:20px 20px;
+    /* border:1px solid green; */
+}
+.six-footer-menus ul{
+    /* padding:30px 30px; */
+    /* border:1px solid blue; */
+}
+.six-footer-menus li{
+    list-style-type:none;
+    font-size:14px;
+    font-weight:500;
+    /* border:1px solid red; */
+    text-decoration:none;
+    color:#292929;
+    font-family:Helvetica;
+}
+.six-footer-menus a{
+    padding:0;
+    text-decoration:none;
+    padding:5px 5px;
+    
+    font-size:14px;
+    font-weight:500;
+    /* border:1px solid red; */
+    text-decoration:none;
+    color:#292929;
+    font-family:Helvetica;
+        }.six-footer-menus-links{
+            color:#6F6F86; 
+            font-size:18px;
+        }
+
+
+/* Begin the main footer menu @the bottom of page */
+.main-footer-section{
+    display:flex;    
+    /* border:1px solid blue; */
+}
+.main-footer-menu{
+    /* width:70%; */
+    display:flex;
+    /* padding:50px 50px; */
+    /* text-decoration:none; */
+    /* list-style-type:none; */
+} 
+.main-footer-menu li{
+    font-size:14px;
+    font-weight:500;
+    /* border:1px solid red; */
+    text-decoration:none;
+    color:#292929;
+    font-family:Helvetica;
+    padding:20px 20px;
+    color:black;
+    /* list-style:none; */
+}
+.main-footer-menu a{
+    font-size:14px;
+    font-weight:500;
+    /* border:1px solid red; */
+    text-decoration:none;
+    color:#292929;
+    font-family:Helvetica;
+    text-decoration:none;
+    /* list-style-type:none; */
+    /* color:black; */
+}
+.copyright{
+    display:flex;
+    /* width:30%; */
+}
+/* End the main footer menu @the bottom of page */

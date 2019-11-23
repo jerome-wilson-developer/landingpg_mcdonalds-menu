@@ -1,0 +1,37 @@
+@import "cssreset.css";
+@import "../css/header.css";
+@import "carosel.css";
+@import "../css/nav.css";
+@import "../css/main-content.css";
+@import "../css/footer.css";
+
+@import "nutrition-calculator.css";
+/* public\css\main-content.css */
+
+html{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:#ffffff;
+    width:100%;
+    margin:0 auto;
+}
+
+#main-wrapper{
+    /* width:100%; */
+    /* width:1250px;
+    margin:0 auto; */
+}
+
+
+button{
+    width:200px;
+    background:#FFBC0D;
+    color:#292929;
+    padding:13px 25px;
+    border-radius:7px;
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    /* contrast:Aa 8.63; */
+}

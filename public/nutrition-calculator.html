@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <title>McDonald's Clone Landing Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+
+<style type="text/css">
+body{
+    margin:0;
+    padding:0;
+    background-color:#ffffff;
+}
+/*
+begin styling for the header container: nav.css: the main menu, the two top menus, and the logo
+*/
+#main-nav-wrapper{
+    height:60px;
+    display:flex;    
+    /* font-size:16px; */
+    margin-top:50px;
+}
+/* styling for the logo-image */
+.top-img-logo{
+    width:8%;
+}
+.nav-section{
+    /* width:90%; */
+    /* border:1px solid blue; */
+}
+.top-menu-1{
+    width:50%;
+    /* border:1px solid green; */
+}
+.top-menu-1{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    margin-left:30px;
+}
+.top-menu-1 li{
+    padding:20px 15px 20px 20px;
+    /* padding-left:30px; */
+    font-size:14px;
+}
+.top-menu-1 a{
+    text-decoration:none;
+    color:#292929;
+    font-family:sans-serif;
+    cursor:grabbing;
+}
+.top-menu-2{
+    width:50%;
+    /* border:1px solid purple; */
+}
+.top-menu-2{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    margin-left:30px;  
+    /* border:1px solid orangered; */
+}
+.top-menu-2 li{
+    padding:20px 15px 20px 20px;
+    font-size:14px;
+}
+.top-menu-2 a{
+    text-decoration:none;
+    color:#292929;
+    font-family:sans-serif;
+    cursor:grabbing;
+}
+.main-menu{
+   /* border:1px solid blue; */
+    margin-bottom:20px;
+    margin-left:140px;
+}
+.main-menu ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    justify-content:flex-start;
+}
+.main-menu li{
+    list-style-type:none;
+    color:#292929;
+    padding:20px 15px 20px 20px;
+    font-size:18px;
+}
+.main-menu a{
+    text-decoration:none;
+    color:#292929;
+    font-family:sans-serif;
+    cursor:grabbing;
+}
+/*
+end styling for the header container: nav.css: the main menu, the two top menus, and the logo
+*/
+
+
+footer{
+    background-color:#ffffff;
+    /* display:flex; */        
+    /* border:1px solid orange; */
+}
+.share-this-page{
+    /* padding:50px 20px; */
+    text-align:center;
+    color:orange;
+    /* border:1px solid orange; */
+    margin:50px 50px;
+}
+footer section{
+    /* margin:20px 20px; */
+    /* width:100%; */
+    display:flex;
+    flex-direction:row;
+    /* padding:30px 30px; */
+    /* justify-content:space-around; */
+    /* margin-left:20px; */
+    /* justify-content:space-around; */
+    /* border:1px solid blue; */
+}
+.six-footer-menus{
+    width:100%;
+    padding:20px 20px;
+    /* border:1px solid green; */
+}
+.six-footer-menus ul{
+    padding:0px;
+    /* padding:30px 30px; */
+    /* border:1px solid blue; */
+}
+.six-footer-menus li{
+    list-style-type:none;
+    font-size:14px;
+    font-weight:500;
+    /* border:1px solid red; */
+    text-decoration:none;
+    color:#292929;
+    font-family:Helvetica;
+}
+.six-footer-menus a{
+    padding:0;
+    text-decoration:none;
+    padding:5px 5px;
+
+    font-size:14px;
+    font-weight:500;
+    /* border:1px solid red; */
+    text-decoration:none;
+    color:#292929;
+    font-family:Helvetica;
+}
+/* Begin the main footer menu @the bottom of page */
+.main-footer-section{
+    display:flex;    
+    /* border:1px solid blue; */
+}
+.main-footer-menu{
+    /* width:70%; */
+    display:flex;
+    /* padding:50px 50px; */
+    /* text-decoration:none; */
+    /* list-style-type:none; */
+} 
+.main-footer-menu li{
+    font-size:14px;
+    font-weight:500;
+    /* border:1px solid red; */
+    text-decoration:none;
+    color:#292929;
+    font-family:Helvetica;
+    padding:20px 20px;
+    color:black;
+    /* list-style:none; */
+}
+.main-footer-menu a{
+    font-size:14px;
+    font-weight:500;
+    /* border:1px solid red; */
+    text-decoration:none;
+    color:#292929;
+    font-family:Helvetica;
+    text-decoration:none;
+    /* list-style-type:none; */
+    /* color:black; */
+}
+.copyright{
+    display:flex;
+    /* width:30%; */
+}
+/* End the main footer menu @the bottom of page */
+
+
+
+/* #main-content{
+    margin-top:30px;
+    background-color:#f9f9f9;
+}
+.calculator{
+    display:flex;
+    flex-direction:row;
+    text-align:center;
+}
+.paragraph{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:400;
+    line-height: 1.2;
+    color:#292929;
+}
+.calorie-diet{
+    color:#292929;
+    padding:0px 30px;
+    margin:20px 32px;
+    border:1px solid #333333;
+    border-radius:5px;
+    background-color:#ffffff;
+}
+.img-row1{
+    margin:0px 0px 118px;
+    padding:0px 30px;
+}
+.imgTitle{
+    columns: #333333;
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+.row-4columns{
+    display:flex;
+    flex-direction:row;
+    padding:30px 30px;
+}
+.important-notes{
+    font-size:12px; 
+    padding:5px 50px; 
+    color:grey; 
+    font-family:Arial, Helvetica, sans-serif;
+} */
+
+</style>
+</head>
+
+
+<body>
+<div id="main-wrapper">
+<section style="display:flex; margin:0; padding:0;">
+    <article style="width:32%; text-align:center; font-family:Arial, Helvetica, sans-serif; margin:0; padding:0; border-right:1px solid black;"> 
+        <div>
+            <p style="font-size:14x; font-family:Arial, Helvetica, sans-serif;color:#292929;">
+                Below is a clone of McDonald's restaurant website
+            </p>
+                <a href="https://github.com/jerome-wilson-developer/personal-brand-portfolio" style="font-size:14; padding:5px 10px; text-decoration:none; color:white; background-color:#000000; border-radius:5px;">github code</a>            
+                <a href="https://www.mcdonalds.com/us/en-us.html" style="font-size:14px; padding:5px 10px; text-decoration:none; color:white; background-color:#000000; border-radius:5px;">clone source</a>                
+        </div>
+    </article>
+
+<!-- add 3 links to showcase 3 more clones of corporate websites -->
+<article style="width:32%; text-align:center; font-family:Arial, Helvetica, sans-serif; margin:0; padding:0; border-right:1px solid black;"> 
+    <div>
+        <p style="font-size:14px; font-family:Arial, Helvetica, sans-serif;color:#000000;">
+            more Corporate website clones
+        </p>
+        <a href="https://jerome-wilson-developer.github.io/clone-Netflix/" style="font-size:14px; padding:5px 10px; text-decoration:none; color:white; background-color:black; border-radius:5px;">clone: Netflix.com</a>
+        <a href="https://wordpress.com/" style="font-size:14px; padding:5px 10px; text-decoration:none; color:white; background-color:black; border-radius:5px;">clone: Wordpress.com</a>            
+    </div>
+</article>
+
+<!-- <div style="width:100%;"> -->
+<article style="width:32%; text-align:left; font-family:Arial, Helvetica, sans-serif;"> 
+        <div style="width:100%; padding:15px 20px 0px 20px;">
+            <p style="margin-top:0px; font-size:14px; font-weight:500; font-family:Arial, Helvetica, sans-serif;color:#292929;">
+                <span style="font-size:14px; font-weight:600; font-family:Arial, Helvetica, sans-serif;color:#292929;">These clones are for Demo Purposes Only.
+                </span> 
+            <br>No infringements are intended against any corporate copyrights, trademarks, intellectual properties, or other proprietary assets.
+            </p>
+        </div> 
+</article> 
+</section>
+<!-- end disclaimer announcing no intention of mcdonald proprietary infringements -->
+
+<div><hr/></div>
+
+<!-- begin navigation for the top-menu-1, top-menu-2, and the main-menu -->
+<!-- add mcdonald's golden arches logo -->
+<nav id="main-nav-wrapper">
+    <div class="top-img-logo">
+        <section>
+            <img src="./img/homepg-logo_108x108.jpg.png" />
+        </section>
+    </div>
+    
+    <!-- begin top-menu-1 section -->
+        <ul class="top-menu-1">
+            <a href="#"><li>Language</li></a>
+            <a href="#"><li>Join Us</li></a>
+            <a href="#"><li>Careers</li></a>
+        </ul>
+    <!-- end top-menu-1 section -->
+    
+    <!-- begin top-menu-2 section -->
+        <ul class="top-menu-2">
+            <a href="#"><li>Search</li></a>
+            <a href="#"><li>3531 Flat Shoals Rd</li></a>
+            <a href="#"><li>Change</li></a>
+        </ul>
+    <!-- end top-menu-2 section -->
+</nav>
+   
+<!-- begin main-menu section -->
+<nav class="main-menu">
+    <ul>
+        <a href="#"><li>Our Menu</li></a>
+        <a href="#"><li>About Our Food</li></a>
+        <a href="#"><li>Deals and Our App</li></a>
+        <a href="#"><li>Trending Now</li></a>
+        <a href="#"><li>Locate</li></a>
+    </ul>
+</nav>
+<!-- end main-menu section -->
+<!-- end navigation for the top-menu-1, top-menu-2, and the main-menu sections -->
+</section>
+<!-- end the header-section container -->
+
+
+
+
+
+<!-- begin the calorie-diet main-content section -->
+
+<!-- #main-content{
+    margin-top:30px;
+    background-color:#f9f9f9;
+} -->
+
+<main id="main-content" style="background-color:#f9f9f9; border:1px solid #f5f5f5;">
+
+    <h1 style="text-align:center;">Nutrition Calculator</h1>
+    <p style="text-align:center;">*Percent Daily Values (DV) are based on a 2,000 calorie diet</p>
+
+
+
+    
+<!-- .calculator{
+    display:flex;
+    flex-direction:row;
+    text-align:center;
+} -->
+<section style="border:blue 1px solid;">
+        <ul class="calculator"  style="display:flex; flex-direction:row; width:100%; text-align:center; border:green 1px solid;">
+                <li style="padding:50px 50px 50px 100px; text-align:center;">
+                        00 
+                    <br>Calories
+                </li>
+                <li style="padding:50px 50px 50px 100px; text-align:center;">
+                    00 
+                    <br>Fat 
+                </li>
+                <li style="padding:50px 50px 50px 100px;">
+                    00
+                    <br>Carbs
+                </li>
+                <li style="padding:50px 50px 50px 100px;">
+                    00 
+                    <br>Protein
+                </li>
+            </ul>   
+</section>
+    
+
+    <hr>
+
+<h3 style="text-align:center;">Select From the Following Categories</h3>
+
+
+<section>
+    <!-- begin row1-4columns-section -->
+        
+    <article class="2rows-4columns" align="center;" style="display:flex; flex-direction:row; padding:30px 0px; background-color:tan; border:orangered 1px solid;">
+
+
+
+                                <!-- .calorie-diet{
+                                color:#292929;
+                                padding:0px 30px;
+                                margin:20px 32px;
+                                border:1px solid #333333;
+                                border-radius:5px;
+                                background-color:#ffffff;
+                                } -->
+            <div class="calorie-diet" style="border-radius:5px; border:1px solid #ccc; padding:60px 50px; background-color:#fff;">
+
+
+
+
+                                <!-- .img-row1{
+                                    margin:0px 0px 118px;
+                                    padding:0px 30px;
+                                } -->
+                <img class="img-row1" src="img/calculator_drinks_300x300.jpg" alt="" style="text-align:center;"> 
+
+
+
+
+                            <!-- .imgTitle{
+                                columns: #333333;
+                                font-size:16px;
+                                font-family:Arial, Helvetica, sans-serif;
+                                text-align:center;
+                            } -->
+                <p class="imgTitle" style="text-align:center;">Beverages</p>
+            </div>
+
+
+
+            <div class="calorie-diet" style="border-radius:5px; border:1px solid #ccc; padding:60px 50px;">
+                <img class="img-row1" src="img/calculator_breakfast_300x300.jpg" alt="" style="text-align:center;">
+                <p class="imgTitle" style="text-align:center;">Breakfast</p>
+            </div>
+            <div class="calorie-diet" style="border-radius:5px; border:1px solid #ccc; padding:60px 50px; background-color:#fff;">
+                <img class="img-row1" src="img/calculator_burgers_300x300.jpg" alt="" style="text-align:center;">            
+                <p class="imgTitle" style="text-align:center;">Burgers</p>
+            </div>
+            <div class="calorie-diet" style="border-radius:5px; border:1px solid #ccc; padding:60px 50px; background-color:#fff;">
+                <img class="img-row1" src="img/calculator_chicken_sandwiches_300x300.jpg" alt="" style="text-align:center;">
+                <p class="imgTitle" style="text-align:center;">Chicken and sandwiches</p>
+            </div>
+    </article>
+</section>
+
+
+<article class="2rows-4columns" align="center;" style="display:flex; flex-direction:row; padding:30px 0px; border:blue 1px solid;">
+    <!-- begin row1-4columns-section -->
+    <div class="calorie-diet" style="border-radius:5px; border:1px solid #ccc; padding:60px 50px; background-color:#fff; margin-left:50px;">
+    <!-- <img class="img-row1" src="img/calculator_drinks_300x300.jpg" style="margin:0px 0px 118px;"> -->
+        <img class="img-row1" src="img/calculator_desserts_shakes_300x300.jpg">
+        <p class="imgTitle" style="text-align:center;">Desserts & Shakes </p>
+    </div>
+    <div class="calorie-diet" style="border-radius:5px; border:1px solid #ccc; padding:60px 50px; background-color:#fff; margin-left:20px;">
+        <img class="img-row1" src="img/calculator_mccafe_300x300.jpg">
+        <p class="imgTitle" style="text-align:center;">McCafé</p>
+    </div>
+    <div class="calorie-diet" style="border-radius:5px; border:1px solid #ccc; padding:60px 50px; background-color:#fff; margin-left:20px;">
+        <img class="img-row1" src="img/calculator_salads_300x300.jpg" width="" height="" alt="">            
+        <p class="imgTitle" style="text-align:center;">Salads</p>
+    </div>
+    <div class="calorie-diet" style="border-radius:5px; border:1px solid #ccc; padding:60px 50px; background-color:#fff; margin-left:20px;">
+        <img class="img-row1" src="img/calculator_snacks_sides_300x300.jpg">
+        <p class="imgTitle" style="text-align:center;">Snacks & Sides</p>
+    </div>
+</section>  
+<!-- end 2rows-4columns section -->
+
+<!-- end the calorie-diet main-content section -->
+</main>
+
+
+
+<!-- .important-notes{
+    font-size:12px; 
+    padding:5px 50px; 
+    color:grey; 
+    font-family:Arial, Helvetica, sans-serif;
+} -->
+<!-- begin Important Notes section -->
+<div class="important-notes" style="padding:100px 50px; font-size:14px; color:#292929; font-family:Arial, Helvetica, sans-serif;">
+<p>Important Note:<br>
+At McDonald's, we take great care to serve quality, great-tasting menu items to our customers each and every time they visit our restaurants. We understand that each of our customers has individual needs and considerations when choosing a place to eat or drink outside their home, especially those customers with food allergies. As part of our commitment to you, we provide the most current ingredient information available from our food suppliers for the eight most common allergens as identified by the U.S. Food and Drug Administration (eggs, dairy, wheat, soy, peanuts, tree nuts, fish and shellfish), so that our guests with food allergies can make informed food selections. However, we also want you to know that despite taking precautions, normal kitchen operations may involve some shared cooking and preparation areas, equipment and utensils, and the possibility exists for your food items to come in contact with other food products, including allergens. We encourage our customers with food allergies or special dietary needs to visit www.mcdonalds.com for ingredient information, and to consult their doctor for questions regarding their diet. Due to the individualized nature of food allergies and food sensitivities, customers' physicians may be best positioned to make recommendations for customers with food allergies and special dietary needs. If you have questions about our food, please reach out to us directly at mcdonalds.com/contact or 1-800-244-6227.</p>
+
+<p>Percent Daily Values (DV) and RDIs are based on unrounded values.</p>
+
+<p>** Percent Daily Values (DV) are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs.</p>
+
+<p>The nutrition information on this website is derived from testing conducted in accredited laboratories, published resources, or from information provided from McDonald's suppliers. The nutrition information is based on standard product formulations and serving sizes.  Calories for fountain beverages are based on standard fill levels plus ice. If you use the self-service fountain inside the restaurant for your drink order, see the sign posted at the beverage fountain for beverage calories without ice. All nutrition information is based on average values for ingredients and is rounded in accordance with current U.S. FDA NLEA regulations. Variation in serving sizes, preparation techniques, product testing and sources of supply, as well as regional and seasonal differences may affect the nutrition values for each product. In addition, product formulations change periodically. You should expect some variation in the nutrient content of the products purchased in our restaurants. Beverage sizes may vary in your market. McDonald’s USA does not certify or claim any of its US menu items as Halal, Kosher or meeting any other religious requirements. We do not promote any of our US menu items as vegetarian, vegan or gluten-free. Our fried menu items are cooked in a vegetable oil blend with citric acid added as a processing aid and dimethylpolysiloxane to reduce oil splatter when cooking.  This information is correct as of January 2019, unless stated otherwise.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <section class="share-this-page">
+        <div">
+            <div style="margin-left:50px; color:#292929; text-align:center;">
+                <h2>Share This Page</h2>
+            </div>
+            
+
+            <ul style="display:flex; flex-direction: row; justify-content: center;">
+                <li><a class="share-this-page" aria-label="Share this page on facebook" href="https://facebook.com/sharer/sharer.php?u=https://www.mcdonalds.com/us/en-us.html" target="_blank" alt="facebook-icon-share-this-page"><img src="img/icon_facebook_icon.png" alt="twitter_icon"/></a></li>
+
+                <li><a class="#" aria-label="Share this page on Twitter" href="https://twitter.com/intent/tweet?text=https://www.mcdonalds.com/us/en-us/about-our-food/nutrition-calculator.html" target="_blank" alt="twitter-icon-share-this-page"><img src="img/icon_twitter_icon.png" alt="twitter_icon"/></a></li>
+            </ul>                 
+        </div>
+    </section>
+    
+
+
+
+<footer>
+    <section class="top-footer-menu">
+        <ul class="six-footer-menus" style="border:orangered 1px solid; padding-left:50px;">
+            <p style="color:#524B29; font-size:;">About Us</p>
+            <a style="color:#6F6F86; font-size:3px;"><li>Our History</li></a>
+            <a href="#"><li>Leadership Team</li></a>
+            <a href="#"><li>Values in Action</li></a>
+            <a href="#"><li>Investor Relations</li></a>
+            <a href="#"><li>News and Notifications</li></a>
+            <a href="#"><li>Franchise Info</li></a>
+            <a href="#"><li>Real Estate</li></a>
+            <a href="#"><li>Recalls and Alerts</li></a>
+            <a href="#"><li>Digital Accessibility</li></a>
+        </ul>
+        <ul class="six-footer-menus" style="border:orangered 1px solid; padding-left:50px;">
+            <p>Careers</p>
+            <a href="#"><li>Education Opportunity</li></a>
+            <a href="#"><li>Employee Perks</li></a>
+            <a href="#"><li>Meet Our People</li></a>
+            <a href="#"><li>Working with Us</li></a>
+            <a href="#"><li>Apply Now</li></a>
+        </ul>
+        <ul class="six-footer-menus" style="border:orangered 1px solid; padding-left:50px;">
+            <p>Services</p>
+            <a href="#"><li>Wi-Fi</li></a>
+            <a href="#"><li>Arch Card</li></a>
+            <a href="#"><li>PlayPlaces and Parties</li></a>
+            <a href="#"><li>McDelivery</li></a>
+            <a href="#"><li>Mobile Order and Pay</li></a>
+        </ul>
+        <ul class="six-footer-menus" style="border:orangered 1px solid; padding-left:50px;">
+            <p>Community</p>
+            <a href="#"><li>RMHC</li></a>
+            <a href="#"><li>McDonald's International</li></a>
+            <a href="#"><li>Black and Positively Golden</li></a>
+        </ul>
+        <ul class="six-footer-menus" style="border:orangered 1px solid; padding-left:50px;">
+            <p href="#">Contact Us</p>
+            <a href="#"><li>Arch Card</li></a>
+            <a href="#"><li>Donations</li></a>
+            <a href="#"><li>Employment</li></a>
+            <a href="#"><li>Mobile App</li></a>
+            <a href="#"><li>Restaurant Feedback</li></a>
+        </ul>
+    </section>
+
+
+
+<!-- Begin social-media-icons-section and googleplay-apple-apps-download section -->
+<section class="6-social-media-icons">
+
+        <!-- Begin 6-social-media-icons section -->
+        
+        <ul class="6-social-media-icons" align="left" style="display:flex; flex-direction:row;">
+                <li class="6-footer-icon-links" style="padding:10px 10px;"><a href="http://facebook.com/McDonaldsUS" target="_blank">
+                    <img src="./img/icon_facebook_icon.png" alt="facebook-icon"/>
+                </a></li>                
+                <li class="6-footer-icon-links" style="padding:10px 10px;"><a href="https://twitter.com/intent/tweet?text=https://www.mcdonalds.com/us/en-us.html" target="_blank">
+                    <img src="./img/icon_twitter_icon.png" alt="facebook-icon"/>
+                </a></li>
+                <li class="6-footer-icon-links" style="padding:10px 10px;"><a href="https://www.youtube.com/c/McDonalds" target="_blank">
+                    <img src="./img/icon_youtube_icon.png" alt="facebook-icon"/>
+                </a></li>
+                <li class="6-footer-icon-links" style="padding:10px 10px;"><a href="https://www.instagram.com/McDonalds/" target="_blank">
+                    <img src="./img/icon_inkedin_icon.png" alt="facebook-icon"/>
+                </a></li>
+                <li class="6-footer-icon-links" style="padding:10px 10px;"><a href="https://mcdonalds.tumblr.com/" target="_blank">
+                    <img src="./img/icon_pinterest_icon.png" alt="facebook-icon"/>
+                </a></li>
+                <li class="6-footer-icon-links" style="padding:10px 10px;"><a href="https://open.spotify.com/user/mcdonalds" target="_blank">
+                    <img src="./img/icon_google_icon.png" alt="facebook-icon"/>
+                </a></li>
+            </ul>
+        
+        
+                
+                    
+        
+                   
+        <!-- end 6-social-media-icons section -->
+        
+        
+        <!-- Begin googleplay-apple-download section -->
+                <div class="googleplay-apple-apps" style="margin-left:650px;">
+                    <a href="https://play.google.com/store/apps/details?id=com.mcdonalds.app&hl=en">
+        
+                        <img src="./img/icon_playstore.png" alt="googleplay-download" style="margin-right:20px;"/>
+                        <!-- <img src="fa-googleplay" alt="googleplay-download" style="margin-right:20px;"/> -->
+                    </a>
+                    <a href="https://apps.apple.com/us/app/mcdonalds/id922103212">
+                        <img src="./img/icon_appstore.png" alt="appleplay-download" style="margin-right:20px;"/>
+                        <!-- <img src="https://apps.apple.com/us/app/mcdonalds/id922103212" alt="appleplay-download"/> -->
+                    </a>
+                </div>
+        <!-- end googleplay-apple-download section -->
+            </section>
+        <!-- end social-media-icons-section and googleplay-apple-apps-download section  -->
+
+    <hr/>
+
+    <section class="main-footer-section">
+        <ul class="main-footer-menu" style="width:100%;">
+            <a href="#"><li>Contact Us</li></a>
+            <a href="#"><li>Privacy(Updated)</li></a>
+            <a href="#"><li>Terms and Conditions</li></a>
+            <a href="#"><li>Accessibility</li></a>
+        </ul>
+        <div class="copyright" style="width:100%;">
+            <img class="img-logo" src="img/homepg-logo_48x48.png" style="margin-left:220px;" />
+            <p>© 2017 - 2019 McDonald's. All Rights Reserved</p>
+        </div>
+    </section>
+</footer>
+
+    </div> 
+</body>
+</html>
