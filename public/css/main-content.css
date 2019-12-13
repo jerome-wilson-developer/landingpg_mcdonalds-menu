@@ -21,21 +21,21 @@
     color:#292929;
     padding:15px 15px;
     margin:30px 5px;
-    border:1px solid #000000;
+    /* border:1px solid #000000; */
 }
 .row1-3columns{
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
     margin-left:65px;
-    border:1px solid #000000;
+    /* border:1px solid #000000; */
 }
 .row2-3columns{
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
     margin-left:65px;
-    border:1px solid #000000;
+    /* border:1px solid #000000; */
 }
 /* .row3-3columns{
     display:flex;

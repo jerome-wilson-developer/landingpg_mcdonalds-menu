@@ -1,7 +1,7 @@
 footer{
     margin: 0;
     padding: 0;   
-    border:1px solid blue;
+    /* border:1px solid blue; */
 }
 .share-this-page{
     /* padding:50px 20px; */
@@ -27,12 +27,12 @@ footer section{
     /* justify-content:space-around; */
     /* margin-left:20px; */
     /* justify-content:space-around; */
-    border:1px solid blue;
+    /* border:1px solid blue; */
 }
 
 
 .six-footer-menus{
-    border:orangered 1px solid; 
+    /* border:rgb(151, 148, 146) 1px solid;  */
     margin-left:25px;
     /* padding:70px 70px; */
     width:100%;
