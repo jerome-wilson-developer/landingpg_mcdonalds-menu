@@ -39,8 +39,9 @@ nav.css: the main menu, the two top menus, and the logo
 }
 .top-menu-1 a{
     text-decoration:none;
-    color:#292929;
-    font-family:sans-serif;
+    color:#6f6f6f;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100;
     cursor:grabbing;
 }
 
@@ -62,8 +63,9 @@ nav.css: the main menu, the two top menus, and the logo
 }
 .top-menu-2 a{
     text-decoration:none;
-    color:#292929;
-    font-family:sans-serif;
+    color:#6f6f6f;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:100;
     cursor:grabbing;
 }
 
@@ -82,11 +84,12 @@ nav.css: the main menu, the two top menus, and the logo
     list-style-type:none;
     color:#292929;
     padding:20px 15px 20px 20px;
-    font-size:18px;
+    font-size:16px;
 }
 .main-menu a{
     text-decoration:none;
     color:#292929;
-    font-family:sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    font-family:100;
     cursor:grabbing;
 }
