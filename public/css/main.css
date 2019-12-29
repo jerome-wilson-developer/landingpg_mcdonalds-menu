@@ -33,5 +33,17 @@ button{
     border-radius:7px;
     font-size:16px;
     font-family:Arial, Helvetica, sans-serif;
-    /* contrast:Aa 8.63; */
+}
+
+button a{
+    text-decoration: none;
+    color:#292929;
+
+    /* width:200px;
+    background:#FFBC0D;
+    color:#292929;
+    padding:13px 25px;
+    border-radius:7px;
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif; */
 }
