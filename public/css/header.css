@@ -1,31 +1,11 @@
 header{
-    /* display:flex; */
-    /* background-image: url("../img/3Col_Mobile_Ordering_760x508.jpg"); */
+    
     background-color: #ffffff;
-    height: 500px;
-    color:#eeeeee;   
+    height: 120px;
+    padding-left:100px;
 }
 
-.img-header{
+/* .img-header{
     background-image:url("../img/3Col_Mobile_Ordering_760x508.jpg");
     height: 500px;
-}
-
-/* .hero-image {
-    background-image: url("photographer.jpg"); /* The image used */
-    /* background-color: #cccccc;
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
-
-
-  /* .hero-image {
-    background-image: url("photographer.jpg"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 500px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-  } */
+} */
