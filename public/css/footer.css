@@ -3,17 +3,9 @@ footer{
     padding: 0;   
     /* border:1px solid blue; */
 }
-.share-this-page{
-    /* padding:50px 20px; */
-    text-align:center;
-    color:orange;
-    /* border:1px solid orange; */
-    margin:50px 50px;
-}
-
-
 footer .top-footer-menu{
     padding-right: 30px;
+    margin-top: 50px;
 }
 footer section .top-footer-menus ul p{
     color:#524B29; 
@@ -32,43 +24,35 @@ footer section{
 
 
 .six-footer-menus{
-    /* border:rgb(151, 148, 146) 1px solid;  */
     margin-left:25px;
-    /* padding:70px 70px; */
     width:100%;
     padding:20px 20px;
     /* border:1px solid green; */
 }
 .six-footer-menus ul{
-    /* padding:30px 30px; */
-    /* border:1px solid blue; */
+    margin:0px;
+    padding:0px;
 }
 .six-footer-menus li{
     list-style-type:none;
     font-size:14px;
     font-weight:500;
-    /* border:1px solid red; */
     text-decoration:none;
-    color:#292929;
-    font-family:Helvetica;
+    color:gray;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:5px 5px 5px 5px;
 }
-.six-footer-menus a{
+/* .six-footer-menus a{
     padding:0;
     text-decoration:none;
-    padding:5px 5px;
-    
+    padding:5px 5px;    
     font-size:14px;
-    font-weight:500;
+    font-weight:500; */
     /* border:1px solid red; */
-    text-decoration:none;
+    /* text-decoration:none;
     color:#292929;
     font-family:Helvetica;
-        }.six-footer-menus-links{
-            color:#6F6F86; 
-            font-size:18px;
-        }
-
-
+    } */
 /* Begin the main footer menu @the bottom of page */
 .main-footer-section{
     display:flex;    

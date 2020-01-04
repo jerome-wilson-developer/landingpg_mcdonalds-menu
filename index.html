@@ -20,7 +20,6 @@
         width:100%
     }
 }
-
     /* Tablet View */
     @media all and (min-width: 768px) and (max-width: 959px){
     .main-wrapper{
@@ -30,7 +29,6 @@
         width:100%
     }    
 }
-
     /* Smartphone View */
     @media all and (max-width: 767px){
     #main-wrapper{
@@ -43,16 +41,29 @@
         display: none;
     }
     .six-offers{
-        width: 100%;
-    }        
-    /* .personal-brand .left-column{
+        color:#292929;
+        padding:15px 15px;
+        margin:10px 10px;
+        /* margin-right: 50px; */
+        border:1px solid #000000;
+    }
+    #main-content .row1to6-grid{
+        /* margin-top:1rem; */
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:450px 450px 700;
+        grid-gap:10px;
+    }
+    .footer .top-footer-menu{
         width:100%;
     }
-
-    .personal-brand .right-column{
+    .footer .top-footer-menu six-footer-menus{
         width:100%;
-    } */
-}     
+    }
+    .main-footer-section .main-footer-menu{
+        width:100%;
+    }
+}
 </style>
 </head>
 
@@ -75,7 +86,7 @@
           font-size:.9rem; letter-spacing:1px;">
                 DISCLAIMER: 
           </span>
-          <br/>These corporation "html tables eamil clones" are for Demo Purposes Only. No infringements are intended against any corporate copyrights, trademarks, intellectual properties, or other proprietary assets.
+          <br/>The "corporation clones" below are for Demonstration Purposes Only. No infringements are intended against any corporate copyrights, trademarks, intellectual properties, or other proprietary assets. All images are the property of its respective owners. Please contact me if there are any issues. Thank you!
       </td>  
       <td style="width:40%; text-align:left; 
       font-family:Arial, Helvetica, sans-serif; 
@@ -87,7 +98,7 @@
             text-decoration:underline;">
                   README: MCDONALDS MENU WEBSITE
             </span>
-            <br/>One day at McDonald's, i clicked on the guest's wifi signal to use their internet. This is the landing page that rendered. i decided to clone it as a great example of minimalism art using white space, content, imagery, spacing, and positioning.
+            <br/>One day at McDonald's, i clicked on the guest's wifi signal to use their internet. This is the landing page that rendered. i decided to clone it as a great example of minimalism art using white space, content, imagery, spacing, positioning, and ux/ui design strategies.
         </td>        
         <td style="width:30%; text-align:left; 
         font-family:Arial, Helvetica, sans-serif; 
@@ -142,9 +153,8 @@
 
 <hr/>
 
-<!-- begin header section -->
+<!-- begin header navigation for the top-menu-1, top-menu-2, and the main-menu sections -->
 <header class="header">
-<!-- begin navigation for the top-menu-1, top-menu-2, and the main-menu -->
 <!-- add mcdonald's golden arches logo -->
 <nav id="main-nav-wrapper">
     <div class="top-img-logo">
@@ -168,7 +178,7 @@
             <li>Search</li>
         </a>
         <a href="https://www.mcdonalds.com/us/en-us/restaurant-locator.html">
-            <li>3531 Flat Shoals Rd</li></a>
+            <li>Find your locale location</li></a>
         <a href="https://www.mcdonalds.com/us/en-us/restaurant-locator.html">
             <li>Change</li></a>
     </ul>
@@ -192,22 +202,29 @@
     </ul>
 </nav>
 <!-- end main-menu section -->
-<!-- end navigation for the top-menu-1, top-menu-2, and the main-menu sections -->
 </header>
-<!-- end header section -->
+<!-- end header navigation for the top-menu-1, top-menu-2, and the main-menu sections -->
 
 <!-- begin placeholder for photo gallery slider -->
 <div style="margin:0px; padding:0px; text-align:center; 
 transition:all .4s ease-in-out;">
-    <img id="slideshow" width="300" height="300" 
-    alt="mcdonald's menu items"/>
+
+<!-- .fade { opacity: 1; transition: opacity .25s ease-in-out;} -->
+
+    <!-- <img id="slideshow" width="300" height="300"  -->
+
+    <img id="slideshow" width="" height="400" 
+    alt="images of mcdonald's menu items"/>
     <!-- <img name="slide" src="public/img/image2.jpg"  -->
 </div>
 <!-- end placeholder for photo gallery slider -->
 
+
+
 <!-- begin the main-content section -->
 <main id="main-content" style="margin-bottom:100px;">
-    <section class="row1-3columns">
+    <section class="row1to6-grid">
+    <!-- <section class="row1-3columns"> -->
         <!-- begin row1-3columns-six-offers section -->
         <div class="six-offers">
             <img class="img-row1" src="public/img/homepg_Nutrition_Calculator_760x508.jpg">
@@ -237,12 +254,11 @@ transition:all .4s ease-in-out;">
             <button><a href="https://www.mcdonalds.com/us/en-us/mccafe/rewards.html">
                 Learn More</a></button>
         </div>
-    </section>
+    <!-- </section> -->
 <!-- end row1-3columns-six-offers section -->
-
 <!-- begin row2-3columns-six-offers section -->
-<section class="row2-3columns">        
-    <div class="six-offers">                  
+<!-- <section class="row2-3columns">         -->
+    <div class="six-offers">               
         <img class="img-row2" src="public/img/Homepage_Promo_donut-sticks.jpg">
         <h2 class="h2header">Donut Sticks are Back</h2>
         <p class="paragraph">
@@ -265,8 +281,7 @@ transition:all .4s ease-in-out;">
     <div class="six-offers">            
         <div>
             <img class="img-row1" src="public/img/homepg_dollar_menu_760x508.jpg">
-            <h2 class="h2header">$1 Any Size Soft Drink 
-                <br/>& $2 Small McCafé®</h2>
+            <h2 class="h2header">$1 Any Size Soft Drink & $2 Small McCafé®</h2>
             <p class="paragraph">
                 Plus, even more of your favorites on the  
                 <br/>$1 $2 $3 Dollar Menu.
@@ -278,38 +293,48 @@ transition:all .4s ease-in-out;">
 </section>
 <!-- end row2-3columns-six-offers section -->    
 
+
+
+
+
 <!-- Begin social-media-icons-section and googleplay-apple-apps-download section -->
-<section class="6-social-media-icons" style="padding-left:450px;">
+<section class="6-social-media-icons" style="padding-left:450px; margin-top:50px;">
     <!-- Begin 6-social-media-icons section -->    
     <ul class="6-social-media-icons" 
     style="display:flex; flex-direction:row; 
     text-align:center;">
         <li class="6-footer-icon-links" style="padding:10px 10px;"><a href="http://facebook.com/McDonaldsUS" target="_blank">
             <img src="public/img/icons-black-no-bg-facebook.png" 
-            width="60" height="60" alt="facebook-icon"/>
+            width="40" height="40" alt="facebook-icon"/>
         </a></li>
         <li class="6-footer-icon-links" style="padding:10px 10px;"><a href="https://twitter.com/intent/tweet?text=https://www.mcdonalds.com/us/en-us.html" target="_blank">
             <img src="public/img/icons-black-no-bg-twitter.png" 
-            width="60" height="60" alt="twitter-icon"/>
+            width="40" height="40" alt="twitter-icon"/>
         </a></li>
         <li class="6-footer-icon-links" style="padding:10px 10px;"><a href="https://www.instagram.com/McDonalds/" target="_blank">
             <img src="public/img/icons-black-no-bg-instagram.png" 
-            width="60" height="60" alt="instagram-icon"/>
+            width="40" height="40" alt="instagram-icon"/>
         </a></li>
         <li class="6-footer-icon-links" style="padding:10px 10px;"><a href="https://www.youtube.com/c/McDonalds" target="_blank">
             <img src="public/img/icons-black-no-bg-youtube.png" 
-            width="60" height="60" alt="youtube-icon"/>
+            width="40" height="40" alt="youtube-icon"/>
         </a></li>
-    </ul>                   
+    </ul>
+</section>                   
 <!-- end 6-social-media-icons section --> 
    
 <!-- Begin googleplay-apple-download section -->
-<div class="googleplay-apple-apps" style="margin-top:20px;">
+<section>
+<div class="googleplay-apple-apps" style="margin-top:20px; padding-left:410px;">
     <a href="https://play.google.com/store/apps/details?id=com.mcdonalds.app&hl=en">
-        <img src="/public/img/badge-googleplay.png" alt="googleplay-download" style="text-align:center;"/>
+        <img src="/public/img/badge-googleplay.png" 
+        width="161" height="56" alt="googleplay-download" 
+        style="text-align:center;"/>
     </a>        
     <a href="https://apps.apple.com/us/app/mcdonalds/id922103212">
-        <img src="/public/img/badge-appleappstore.png" alt="appleplay-download" style="text-align:center;"/>
+        <img src="/public/img/badge-appleappstore.png" 
+        width="156" height="51" alt="appleplay-download" 
+        style="text-align:center;"/>
     </a>
 </div>
 <!-- end googleplay-apple-download section -->
@@ -322,46 +347,55 @@ transition:all .4s ease-in-out;">
 <footer>
     <section class="top-footer-menu">    
         <ul class="six-footer-menus">
-            <p style="color:#524B29;">About Us</p>
-            <a><li>Our History</li></a>
-            <a class="six-footer-menus-links" href="#"><li>Leadership Team</li></a>
-            <a href="#" class="six-footer-menus-links"><li>Values in Action</li></a>
-            <a href="#"><li>Investor Relations</li></a>
-            <a href="#"><li>News and Notifications</li></a>
-            <a href="#"><li>Franchise Info</li></a>
-            <a href="#"><li>Real Estate</li></a>
-            <a href="#"><li>Recalls and Alerts</li></a>
-            <a href="#"><li>Digital Accessibility</li></a>
+            <li style="color:#292929; font-family:Arial, Helvetica, sans-serif;">
+                About Us
+            </li>
+            <li>Our History</li>
+            <li>Leadership Team</li>
+            <li>Values in Action</li>
+            <li>Investor Relations</li>
+            <li>News and Notifications</li>
+            <li>Real Estate</li>
+            <li>Recalls and Alerts</li>
+            <li>Digital Accessibility</li>
         </ul>
         <ul class="six-footer-menus">
-            <p>Careers</p>
-            <a href="#"><li>Education Opportunity</li></a>
-            <a href="#"><li>Employee Perks</li></a>
-            <a href="#"><li>Meet Our People</li></a>
-            <a href="#"><li>Working with Us</li></a>
-            <a href="#"><li>Apply Now</li></a>
+            <li style="color:#292929; font-family:Arial, Helvetica, sans-serif;">
+                Careers
+            </li>
+            <li>Education Opportunity</li>
+            <li>Employee Perks</li>
+            <li>Meet Our People</li>
+            <li>Working with Us</li>
+            <li>Apply Now</li>
         </ul>
         <ul class="six-footer-menus">
-            <p>Services</p>
-            <a href="#"><li>Wi-Fi</li></a>
-            <a href="#"><li>Arch Card</li></a>
-            <a href="#"><li>PlayPlaces and Parties</li></a>
-            <a href="#"><li>McDelivery</li></a>
-            <a href="#"><li>Mobile Order and Pay</li></a>
+            <li style="color:#292929; font-family:Arial, Helvetica, sans-serif;">
+                Services
+            </li>
+            <li>Wi-Fi</li>
+            <li>Arch Card</li>
+            <li>PlayPlaces and Parties</li>
+            <li>McDelivery</li>
+            <li>Mobile Order and Pay</li>
         </ul>
         <ul class="six-footer-menus">
-            <p>Community</p>
-            <a href="#"><li>RMHC</li></a>
-            <a href="#"><li>McDonald's International</li></a>
-            <a href="#"><li>Black and Positively Golden</li></a>
+            <li style="color:#292929; font-family:Arial, Helvetica, sans-serif;">
+                Community
+            </li>
+            <li>RMHC</li>
+            <li>McDonald's International</li>
+            <li>Black and Positively Golden</li>
         </ul>
         <ul class="six-footer-menus">
-            <p href="#">Contact Us</p>
-            <a href="#"><li>Arch Card</li></a>
-            <a href="#"><li>Donations</li></a>
-            <a href="#"><li>Employment</li></a>
-            <a href="#"><li>Mobile App</li></a>
-            <a href="#"><li>Restaurant Feedback</li></a>
+            <li style="color:#292929; font-family:Arial, Helvetica, sans-serif;">
+                Contact Us
+            </li>
+            <li>Arch Card</li>
+            <li>Donations</li>
+            <li>Employment</li>
+            <li>Mobile App</li>
+            <li>Restaurant Feedback</li>
         </ul>
     </section>
 <hr/>
@@ -388,10 +422,10 @@ transition:all .4s ease-in-out;">
         var i = 0;
         function change_image(){
             document.getElementById("slideshow").src = 
-            "public/img-slider/image"+(i++ % 8)+".jpg";
+            "public/img-slider/image"+(i++ % 3)+".jpg";
         }
         function slider(){
-            setInterval(change_image, 2500);
+            setInterval(change_image, 3000);
         }    
 </script>
 </body>
