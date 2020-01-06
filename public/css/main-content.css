@@ -39,20 +39,22 @@
         grid-template-rows:450px 450px 700;
         grid-gap:10px;
     }
-    #main-content .six-footer-icon-links{
+    /* #main-content .six-footer-icon-links{
         width:100%;
         text-align: center;
-    }
+    } */
     #main-content .six-social-media-icons{
         display: flex;
         /* padding-left:100px; */
+        padding-left:400px;
     }
     #main-content .two-download-icons{
         display: flex;
         /* padding-left:10px; */
+        padding-right:40px;
     }
     #main-content .googleplay-apple-apps{
-        /* padding-left:10px; */
+        padding-right:40px;
         display: flex;
     }
 }
