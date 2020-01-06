@@ -1,12 +1,8 @@
 @import "cssreset.css";
 @import "../css/header.css";
-@import "carosel.css";
 @import "../css/nav.css";
 @import "../css/main-content.css";
 @import "../css/footer.css";
-
-/* @import "nutrition-calculator.css"; */
-/* public\css\main-content.css */
 
 html{
     margin:0;
@@ -17,7 +13,6 @@ body{
     width:100%;
     margin:0 auto;
 }
-
 #main-wrapper{
     margin:0 auto;
 }
@@ -36,6 +31,8 @@ button a{
     font-family:Arial, Helvetica, sans-serif;
 }
 
+
+
 /* Tablet View */
 /* @media all and (min-width: 768px) and (max-width: 959px){
     .main-wrapper{
@@ -52,7 +49,7 @@ button a{
 } */
 
     /* Smartphone View */
-    /* @media all and (max-width: 767px){
+    @media all and (max-width: 767px){
     #main-wrapper{
         width:100%;
         text-align: center;
@@ -64,15 +61,13 @@ button a{
     .disclaimer{
         display: none;
     }
-
-
     header{
         width:100%;
         text-align:center;
     }
 
 
-    .six-offers{
+    /* .six-offers{
         color:#292929;
         padding:15px 15px;
         margin:10px 10px;
@@ -86,8 +81,10 @@ button a{
     .six-social-media-icons{
         width:100%;
         text-align: center;
-    }
-    .six-footer-icon-links{
+    } */
+
+
+    /* .six-footer-icon-links{
         width:100%;
         text-align: center;
     }
@@ -99,5 +96,5 @@ button a{
     }
     .main-footer-section .main-footer-menu{
         width:100%;
-    }
-} */
+    } */
+}
