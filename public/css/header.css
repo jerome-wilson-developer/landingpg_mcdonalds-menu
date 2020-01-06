@@ -9,14 +9,15 @@ nav.css: the main menu, the two top menus, and the logo
 */
 
 /* styling for the navigation container */ 
-#main-nav-wrapper{
+/* #main-nav-wrapper{
     height:60px;
     display:flex;
 
     margin-top:50px;
-}
+} */
+
 /* styling for the logo-image */
-.top-img-logo{
+/* .top-img-logo{
     width:8%;
 }
 .nav-section{
@@ -85,7 +86,7 @@ nav.css: the main menu, the two top menus, and the logo
     color:#292929;
     font-family:100;
     cursor: pointer;
-}
+} */
 
 
     /* Smartphone View */
