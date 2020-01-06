@@ -46,15 +46,15 @@
     #main-content .six-social-media-icons{
         display: flex;
         /* padding-left:100px; */
-        padding-left:400px;
+        padding-left:200px;
     }
     #main-content .two-download-icons{
         display: flex;
         /* padding-left:10px; */
-        padding-right:40px;
+        padding-right:400px;
     }
     #main-content .googleplay-apple-apps{
-        padding-right:40px;
+        padding-right:400px;
         display: flex;
     }
 }
