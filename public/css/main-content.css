@@ -25,6 +25,10 @@
     grid-template-rows:600px 675px;
     grid-gap:5px;
 }
+#main-content .googleplay-apple-apps{
+    padding-left:450px;
+    display: flex;
+}
 
 
     /* Smartphone View */
@@ -35,18 +39,20 @@
         grid-template-rows:450px 450px 700;
         grid-gap:10px;
     }
-    #main-content .six-social-media-icons{
-        display: flex;
-    }
     #main-content .six-footer-icon-links{
         width:100%;
         text-align: center;
     }
+    #main-content .six-social-media-icons{
+        display: flex;
+        /* padding-left:100px; */
+    }
     #main-content .two-download-icons{
         display: flex;
+        /* padding-left:10px; */
     }
     #main-content .googleplay-apple-apps{
-        padding-left:100px;
+        /* padding-left:10px; */
         display: flex;
     }
 }
