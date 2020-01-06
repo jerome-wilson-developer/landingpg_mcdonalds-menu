@@ -41,8 +41,10 @@
         display: left;
     }
 } */
+
+
     /* Tablet View */
-    @media all and (min-width: 768px) and (max-width: 959px){
+    /* @media all and (min-width: 768px) and (max-width: 959px){
     .main-wrapper{
         width:100%;
         text-align: center;
@@ -54,9 +56,9 @@
     .disclaimer{
         display: left;
     }    
-}
+} */
     /* Smartphone View */
-    @media all and (max-width: 767px){
+    /* @media all and (max-width: 767px){
     #main-wrapper{
         width:100%;
         text-align: center;
@@ -72,11 +74,8 @@
         color:#292929;
         padding:15px 15px;
         margin:10px 10px;
-        /* margin-right: 50px; */
-        /* border:1px solid #000000; */
     }
     #main-content .row1to6-grid{
-        /* margin-top:1rem; */
         display:grid;
         grid-template-columns:1fr 1fr;
         grid-template-rows:450px 450px 700;
@@ -89,56 +88,6 @@
     .six-footer-icon-links{
         width:100%;
         text-align: center;
-    }
-    .footer .top-footer-menu{
-        width:100%;
-    }
-    .footer .top-footer-menu six-footer-menus{
-        width:100%;
-    }
-    .main-footer-section .main-footer-menu{
-        width:100%;
-    }
-
-
-/* Tablet View */
-/* @media all and (min-width: 768px) and (max-width: 959px){
-    .main-wrapper{
-        width:100%;
-    }
-    .main-container{
-        width:100%
-    }
-    #main-content .row1to6-grid{
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows:450px 450px 450px;
-        grid-gap:10px;
-    }    
-} */
-
-/* header main-nav-wrapper top-menu-1 top-menu-2 main-menu photo-gallery main-content */
-    /* Smartphone View */
-    /* @media all and (max-width: 767px){
-    #main-wrapper{
-        width:100%;
-    }
-    .main-container{
-        width:100%
-    }
-    .disclaimer{
-        display: none;
-    }
-    .six-offers{
-        color:#292929;
-        padding:15px 15px;
-        margin:10px 10px;
-    }
-    #main-content .row1to6-grid{
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:450px 450px 450px 450px 450px 450px;
-        grid-gap:10px;
     }
     .footer .top-footer-menu{
         width:100%;
