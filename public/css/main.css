@@ -68,6 +68,8 @@ button a{
         margin-bottom:70px;
         /* text-align:center; */
     }
+
+/*     
     .six-offers{
         color:#292929;
         padding:15px 15px;
@@ -87,18 +89,23 @@ button a{
         display: flex;
     }
     .six-social-media-icons{
-        /* padding-left: 100px; */
         padding-left: 10px;
+        text-align: center;
     }
     .googleplay-apple-apps{
         padding-left:100px;
-    }
-
+        display: flex;
+    } */
 
     /* .six-footer-icon-links{
         width:100%;
         text-align: center;
     }
+
+
+
+
+
     .footer .top-footer-menu{
         width:100%;
     }
