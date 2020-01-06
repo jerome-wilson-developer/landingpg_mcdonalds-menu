@@ -57,7 +57,7 @@
         padding:15px 15px;
         margin:10px 10px;
         /* margin-right: 50px; */
-        border:1px solid #000000;
+        /* border:1px solid #000000; */
     }
     #main-content .row1to6-grid{
         /* margin-top:1rem; */
@@ -65,6 +65,14 @@
         grid-template-columns:1fr 1fr;
         grid-template-rows:450px 450px 700;
         grid-gap:10px;
+    }
+    .six-social-media-icons{
+        width:100%;
+        text-align: center;
+    }
+    .six-footer-icon-links{
+        width:100%;
+        text-align: center;
     }
     .footer .top-footer-menu{
         width:100%;
@@ -110,7 +118,7 @@
             text-decoration:underline;">
                   README: MCDONALDS MENU WEBSITE
             </span>
-            <br/>One day at McDonald's, i clicked on the guest's wifi signal to use their internet. This is the landing page that rendered. i decided to clone it as a great example of minimalism art using white space, content, imagery, spacing, positioning, and ux/ui design strategies.
+            <br/>This is a clone of the landing page that renders when you use the guest's wifi signal at McDonalds. I rebuilt it as a great example of minimalism art that uses white space, imagery, spacing, positioning, content, and ux/ui design strategies. An good example of "Less is More".
         </td>        
         <td style="width:30%; text-align:left; 
         font-family:Arial, Helvetica, sans-serif; 
@@ -162,9 +170,7 @@
     </td>
 </tr>
 <!-- end disclaimer section -->
-
 <hr/>
-
 <!-- begin header navigation for the top-menu-1, top-menu-2, and the main-menu sections -->
 <header class="header">
 <!-- add mcdonald's golden arches logo -->
@@ -178,8 +184,8 @@
     </div>    
     <!-- begin top-menu-1 section -->
     <ul class="top-menu-1">
-        <li style="color:gray">Language</li>
-        <li style="color:gray">Sign Up for Email</li>
+        <!-- <li style="color:gray">Language</li> -->
+        <!-- <li style="color:gray">Sign Up for Email</li> -->
         <a href="https://careers.mcdonalds.com/main/">
             <li>Careers</li></a>
     </ul>
@@ -199,7 +205,7 @@
 <!-- begin main-menu section -->
 <nav class="main-menu">
     <ul>
-        <li style="color:gray">Our Menu</li>
+        <!-- <li style="color:gray">Our Menu</li> -->
         <a href="https://www.mcdonalds.com/us/en-us/mccafe.html">
             <li>McCafe</li></a>
         <a href="https://www.mcdonalds.com/us/en-us/about-our-food.html">
@@ -218,7 +224,7 @@
 <!-- end header navigation for the top-menu-1, top-menu-2, and the main-menu sections -->
 
 <!-- begin placeholder for photo gallery slider -->
-<div style="margin:0px; padding:0px; text-align:center; 
+<div class="photo-gallery" style="margin:0px; padding:0px; text-align:center; 
 transition:all .4s ease-in-out;">
 
 <!-- .fade { opacity: 1; transition: opacity .25s ease-in-out;} -->
@@ -230,6 +236,7 @@ transition:all .4s ease-in-out;">
     <!-- <img name="slide" src="public/img/image2.jpg"  -->
 </div>
 <!-- end placeholder for photo gallery slider -->
+
 
 
 
@@ -271,14 +278,13 @@ transition:all .4s ease-in-out;">
 <!-- begin row2-3columns-six-offers section -->
 <!-- <section class="row2-3columns">         -->
     <div class="six-offers">               
-        <img class="img-row2" src="public/img/Homepage_Promo_donut-sticks.jpg">
-        <h2 class="h2header">Donut Sticks are Back</h2>
+        <img class="img-row2" src="public/img/homepg_StillLife_Bike_3col_376x252.jpg">
+        <h2 class="h2header">McCafé® in Stores</h2>
         <p class="paragraph">
-            Donut Sticks return, now with Chocolate Sauce. 
-            <br/>Warm up the holidays with sweet golden-brown 
-            <br/>treats and the new McCafé® Cinnamon Cookie Latte.
+            Real milk. Real sugar. Real ahh. 
+            <br/>Now at select retailers near you.
         </p>
-        <button><a href="https://www.mcdonalds.com/us/en-us/holidays-with-mccafe.html">Tell Me More</a></button>
+        <button><a href="https://www.mcdonalds.com/us/en-us/mccafe-in-stores/on-the-go.html">Tell Me More</a></button>
     </div>
     <div class="six-offers">
         <img class="img-row2" src="public/img/homepage_Golden-Arches.jpg">
@@ -310,12 +316,12 @@ transition:all .4s ease-in-out;">
 
 
 <!-- Begin social-media-icons-section and googleplay-apple-apps-download section -->
-<section class="6-social-media-icons" style="padding-left:450px; margin-top:50px;">
+<section class="six-social-media-icons" style="padding-left:450px; margin-top:50px;">
     <!-- Begin 6-social-media-icons section -->    
     <ul class="6-social-media-icons" 
     style="display:flex; flex-direction:row; 
     text-align:center;">
-        <li class="6-footer-icon-links" style="padding:10px 10px;"><a href="http://facebook.com/McDonaldsUS" target="_blank">
+        <li class="six-footer-icon-links" style="padding:10px 10px;"><a href="http://facebook.com/McDonaldsUS" target="_blank">
             <img src="public/img/icons-black-no-bg-facebook.png" 
             width="40" height="40" alt="facebook-icon"/>
         </a></li>
@@ -434,7 +440,7 @@ transition:all .4s ease-in-out;">
         var i = 0;
         function change_image(){
             document.getElementById("slideshow").src = 
-            "public/img-slider/image"+(i++ % 3)+".jpg";
+            "public/img-slider/image"+(i++ % 4)+".jpg";
         }
         function slider(){
             setInterval(change_image, 3000);
