@@ -56,14 +56,14 @@
     #main-content .six-social-media-icons{
         /* padding-left:150px;  */
         /* margin-top:50px; */
-        padding-left:150px; 
+        padding-left:300px; 
     }
     #main-content .googleplay-apple-apps{
         display: flex;
         flex-direction: row;
         margin-top:20px; 
         /* padding-left:410px; */
-        padding-left:300px;
+        padding-left:250px;
     }
 }
 
