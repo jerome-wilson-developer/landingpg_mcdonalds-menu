@@ -1,5 +1,6 @@
 #main-content{
-    margin:50px 0px;
+    margin:50px 10px;
+    margin-bottom:100px;
 }
 .h2header{    
     font-family:Arial, Helvetica, sans-serif;
@@ -14,7 +15,7 @@
     line-height: 1.2;
     color:#292929;
 }
-.six-offers{
+#main-content .six-offers{
     color:#292929;
     padding:15px 15px;
     margin:30px 5px;
@@ -26,14 +27,14 @@
     grid-gap:5px;
 }
 #main-content .six-social-media-icons{
-    padding-left:150px; 
+    padding-left:480px; 
     margin-top:50px;
 }
 #main-content .googleplay-apple-apps{
     display: flex;
     flex-direction: row;
     margin-top:20px; 
-    padding-left:410px;
+    padding-left:440px;
 }
 #main-content .six-footer-icon-links{
     display:flex; 
@@ -43,8 +44,25 @@
 #main-content .six-footer-icon-links li{
     padding:10px 10px;
 }
-
-
+    /* Tablet View */
+    @media all and (min-width: 768px) and (max-width: 959px){
+    #main-content .row1to6-grid{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:450px 450px 700;
+        grid-gap:10px;
+    }
+    #main-content .six-social-media-icons{
+        margin-top:50px;
+        padding-left:300px; 
+    }
+    #main-content .googleplay-apple-apps{
+        display: flex;
+        flex-direction: row;
+        margin-top:20px;
+        padding-left:250px;
+    }
+}
     /* Smartphone View */
     @media all and (max-width: 767px){
     #main-content .row1to6-grid{
@@ -54,15 +72,13 @@
         grid-gap:10px;
     }
     #main-content .six-social-media-icons{
-        /* padding-left:150px;  */
-        /* margin-top:50px; */
+        margin-top:50px;
         padding-left:300px; 
     }
     #main-content .googleplay-apple-apps{
         display: flex;
         flex-direction: row;
         margin-top:20px; 
-        /* padding-left:410px; */
         padding-left:250px;
     }
 }

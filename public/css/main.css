@@ -30,29 +30,10 @@ button a{
     color:#292929;
     font-family:Arial, Helvetica, sans-serif;
 }
-
-
-
 /* Tablet View */
-/* @media all and (min-width: 768px) and (max-width: 959px){
-    .main-wrapper{
-        width:100%;
-        text-align: center;
-    }
-    .main-container{
-        width:100%;
-        text-align: center;
-    }
-    .disclaimer{
-        display: left;
-    }    
-} */
-
-    /* Smartphone View */
-    @media all and (max-width: 767px){
+@media all and (min-width: 768px) and (max-width: 959px){
     #main-wrapper{
-        width:100%;
-        text-align: center;
+        margin:0 auto;
     }
     .main-container{
         width:100%;
@@ -64,53 +45,22 @@ button a{
     header{
         width:100%;
         margin-bottom:70px;
-        /* text-align:center; */
     }
-
-/*     
-    .six-offers{
-        color:#292929;
-        padding:15px 15px;
-        margin:10px 10px;
+}
+    /* Smartphone View */
+    @media all and (max-width: 767px){
+    #main-wrapper{
+        margin:0 auto;
     }
-    #main-content .row1to6-grid{
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows:450px 450px 700;
-        grid-gap:10px;
-    }
-    .six-social-media-icons{
+    .main-container{
         width:100%;
         text-align: center;
     }
-    .two-download-icons{
-        display: flex;
+    .disclaimer{
+        display: none;
     }
-    .six-social-media-icons{
-        padding-left: 10px;
-        text-align: center;
-    }
-    .googleplay-apple-apps{
-        padding-left:100px;
-        display: flex;
-    } */
-
-    /* .six-footer-icon-links{
+    header{
         width:100%;
-        text-align: center;
+        margin-bottom:70px;
     }
-
-
-
-
-
-    .footer .top-footer-menu{
-        width:100%;
-    }
-    .footer .top-footer-menu six-footer-menus{
-        width:100%;
-    }
-    .main-footer-section .main-footer-menu{
-        width:100%;
-    } */
 }
