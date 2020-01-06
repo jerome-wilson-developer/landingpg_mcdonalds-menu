@@ -37,7 +37,7 @@ button a{
 }
 
 /* Tablet View */
-@media all and (min-width: 768px) and (max-width: 959px){
+/* @media all and (min-width: 768px) and (max-width: 959px){
     .main-wrapper{
         width:100%;
         text-align: center;
@@ -49,9 +49,10 @@ button a{
     .disclaimer{
         display: left;
     }    
-}
+} */
+
     /* Smartphone View */
-    @media all and (max-width: 767px){
+    /* @media all and (max-width: 767px){
     #main-wrapper{
         width:100%;
         text-align: center;
@@ -63,6 +64,14 @@ button a{
     .disclaimer{
         display: none;
     }
+
+
+    header{
+        width:100%;
+        text-align:center;
+    }
+
+
     .six-offers{
         color:#292929;
         padding:15px 15px;
@@ -91,4 +100,4 @@ button a{
     .main-footer-section .main-footer-menu{
         width:100%;
     }
-}
+} */
