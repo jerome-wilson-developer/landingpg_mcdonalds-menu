@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
 <!-- begin disclaimer section -->
 <tr>
     <td>
-  <table class="disclaimer" width="100%" align="center" border="0" 
+  <table role="layout" class="disclaimer" width="100%" align="center" border="0" 
   cellspacing="0" cellpadding="0" style="background-color:gold; 
   text-align:left; margin:0; padding:0;">
   <tr>
@@ -29,7 +29,8 @@
           font-size:.9rem; letter-spacing:1px;">
                 DISCLAIMER: 
           </span>
-          <br/>The "corporation clones" below are for Demonstration Purposes Only. No infringements are intended against any corporate copyrights, trademarks, intellectual properties, or other proprietary assets. All images are the property of its respective owners. Please contact me if there are any issues. Thank you!
+          <br/>
+          The "corporation clones" below are for Demonstration Purposes Only. No infringements are intended against any corporate copyrights, trademarks, intellectual properties, or other proprietary assets. All images are the property of its respective owners. Please contact me if there are any issues. Thank you!
       </td>  
       <td style="width:40%; text-align:left; 
       font-family:Arial, Helvetica, sans-serif; 
@@ -39,9 +40,10 @@
             <span style="font-weight:600; 
             font-size:.9rem; letter-spacing:1px;
             text-decoration:underline;">
-                  README: MCDONALDS MENU WEBSITE
+                  README: MCDONALDS MENU LANDING PAGE
             </span>
-            <br/>This is a clone of the landing page that renders when you use the guest's wifi internet at McDonalds. I rebuilt it as a great example of minimalist artwork that uses white space, imagery, spacing, positioning, content, and ux/ui design strategies. It is a great example of ... "Less is More".
+            <br/>
+            This is a clone of the landing page displayed for guest at McDonald's who use their free wifi. I rebuilt it as a great example of minimalist artwork that maximizes white space, imagery, spacing, positioning, content, and ux/ui design strategies. It is a great example of ... "Less is More".
         </td>        
         <td style="width:30%; text-align:left; 
         font-family:Arial, Helvetica, sans-serif; 
@@ -56,10 +58,9 @@
             <br/> html tables, html5, css3, javascript, responsive, web accessibility,
                   <a align="center" href="https://github.com/jerome-wilson-developer/landingpg_mcdonalds-menu" target="_blank">
                     GITHUB
-                  </a>, lighthouse audit, 
+                  </a>, npm, webpack,  
                   <a href="https://mcdonalds-menu.netlify.com/" target="_blank">
-                    NETLIFY
-                  </a>.
+                    NETLIFY</a>, lighthouse audit, NVDA, etc.
         <hr/>
         <a align="center" style="padding:5px 3px 5px 5px;">
           <img src="/public/img/icon-html5-png-128x128.png" 
@@ -94,180 +95,224 @@
 <!-- end disclaimer section -->
 <hr/>
 <!-- begin header navigation for the top-menu-1, top-menu-2, and the main-menu sections -->
-<header class="header">
+<header role="banner" class="header">
 <!-- add mcdonald's golden arches logo -->
-<nav id="main-nav-wrapper">
-    <div class="top-img-logo">
-        <section>
+    <nav id="main-nav-wrapper" class="top-img-logo">
+        <section role="logo">
             <a href="https://mcdonalds-menu.netlify.com/">                
                 <img src="public/img/homepg-logo_108x108.jpg.png" />
             </a>
         </section>
-    </div>    
-    <!-- begin top-menu-1 section -->
-    <ul class="top-menu-1">
-        <!-- <li style="color:gray">Language</li> -->
-        <!-- <li style="color:gray">Sign Up for Email</li> -->
-        <a href="https://careers.mcdonalds.com/main/">
-            <li>Careers</li></a>
-    </ul>
-<!-- end top-menu-1 section -->    
-<!-- begin top-menu-2 section -->
-    <ul class="top-menu-2">
-        <a href="https://www.mcdonalds.com/us/en-us/search-results.html">
-            <li>Search</li>
-        </a>
-        <a href="https://www.mcdonalds.com/us/en-us/restaurant-locator.html">
-            <li>Find your closest location</li></a>
-        <a href="https://www.mcdonalds.com/us/en-us/restaurant-locator.html">
-            <li>Change</li></a>
-    </ul>
-    <!-- end top-menu-2 section -->
-</nav>   
-<!-- begin main-menu section -->
-<nav class="main-menu">
-    <ul>
-        <!-- <li style="color:gray">Our Menu</li> -->
-        <a href="https://www.mcdonalds.com/us/en-us/mccafe.html">
-            <li>McCafe</li></a>
-        <a href="https://www.mcdonalds.com/us/en-us/about-our-food.html">
-            <li>About Our Food</li></a>
-        <a href="https://www.mcdonalds.com/us/en-us/deals.html">
-            <li>Deals and Our App                
-            </li></a>
-        <a href="https://www.mcdonalds.com/us/en-us/whats-hot.html">
-            <li>Trending Now</li></a>
-        <a href="https://www.mcdonalds.com/us/en-us/restaurant-locator.html">
-            <li>Locate</li></a>
-    </ul>
-</nav>
-<!-- end main-menu section -->
+        <!-- begin top-menu-1 section -->
+        <ul role="navigation" 
+        aria-label="top-left-menu" 
+        class="top-menu-1">
+            <!-- <li style="color:gray">Language</li> -->
+            <!-- <li style="color:gray">Sign Up for Email</li> -->
+            <li><a href="https://careers.mcdonalds.com/main/">
+                Careers
+                </a>
+            </li>
+        </ul>
+    <!-- end top-menu-1 section -->    
+    <!-- begin top-menu-2 section -->
+        <ul role="navigation" 
+        aria-label = "top-right-menu" 
+        class="top-menu-2">
+            <!-- <li>
+                <a role="search" href="https://www.mcdonalds.com/us/en-us/search-results.html">
+                Search
+                </a>
+            </li> -->
+            <li>
+                <a role="search" href="https://www.mcdonalds.com/us/en-us/restaurant-locator.html">
+                Locations
+                </a>
+            </li>
+            <!-- <li>
+                <a role="link" href="https://www.mcdonalds.com/us/en-us/about-our-food.html">
+                    About Our Food
+                </a>
+            </li> -->
+        </ul>
+        <!-- end top-menu-2 section -->
+    </nav>   
+
+
+    <!-- begin main-menu section -->
+    <nav class="main-menu">
+        <ul role="navigation" aria-label = "main-menu">
+            <li>
+                <a role="link" href="https://www.mcdonalds.com/us/en-us/mccafe.html">
+                    McCafe
+                </a>
+            </li>
+            <li>
+                <a role="link" href="https://www.mcdonalds.com/us/en-us/about-our-food.html">
+                    About Our Food
+                </a>
+            </li>
+            <li><a role="link" href="https://www.mcdonalds.com/us/en-us/deals.html">
+            Deals and Our App</a></li>
+            <li><a role="link" href="https://www.mcdonalds.com/us/en-us/whats-hot.html">
+            Trending Now</a></li>
+            <li><a role="link" href="https://www.mcdonalds.com/us/en-us/restaurant-locator.html">
+            Locate</a></li>
+        </ul>
+    </nav>
 </header>
 <!-- end header navigation for the top-menu-1, top-menu-2, and the main-menu sections -->
 
+
 <!-- begin placeholder for photo gallery slider -->
-<div class="photo-gallery" style="margin:0px; padding:0px; text-align:center; 
+<section role="img" class="photo-gallery" 
+style="margin:0px; padding:0px; text-align:center; 
 transition:all .4s ease-in-out;">
 <!-- .fade { opacity: 1; transition: opacity .25s ease-in-out;} -->
-    <img id="slideshow" width="" height="400" 
-    alt="images of mcdonald's menu items"/>
-</div>
+    <img id="slideshow" 
+    width="" height="400" 
+    alt=""/>
+    <!-- alt="four images of mcdonald's menu items rotating"/> -->
+</section>
 <!-- end placeholder for photo gallery slider -->
+
 
 <!-- begin the main-content section -->
 <main id="main-content">
-    <section class="row1to6-grid">
-    <!-- <section class="row1-3columns"> -->
-        <!-- begin row1-3columns-six-offers section -->
+    <section role="main" class="row1to6-grid">
+        <!-- begin two rows with six menu item choices section -->
         <div class="six-offers">
-            <img class="img-row1" src="public/img/homepg_Nutrition_Calculator_760x508.jpg">
-            <h2 class="h2header">Nutrition Calculator</h2>
+            <img class="img-row1" src="public/img/homepg_Nutrition_Calculator_760x508.jpg"
+            alt="learn nutrition facts about menu items">
+            <h2 class="h2header">
+                Nutrition Calculator</h2>
             <p class="paragraph">
                 Explore our nutrition facts and learn more 
                 <br/>about your favorite McDonald’s menu items. 
             </p>
-            <button><a href="https://www.mcdonalds.com/us/en-us/about-our-food/nutrition-calculator.html">Get Nutrition Details</a></button>
+            <button><a href="https://www.mcdonalds.com/us/en-us/about-our-food/nutrition-calculator.html">
+                Get Nutrition Details</a>
+            </button>
         </div>        
         <div class="six-offers">
-            <img class="img-row2" src="public/img/homepage_100-pure-beef.jpg">
+            <img class="img-row2" src="public/img/homepage_100-pure-beef.jpg"
+            alt="learn nutrition facts about menu items">
             <h2 class="h2header">100% Fresh Beef</h2>
             <p class="paragraph">                        
                 Quarter Pounder®* patties cooked fresh and hot 
                 <br>when you order.
             </p>
-            <button><a href="https://www.mcdonalds.com/us/en-us/about-our-food/fresh-beef.html">Learn More</a></button>
+            <button><a href="https://www.mcdonalds.com/us/en-us/about-our-food/fresh-beef.html">
+                Learn More</a>
+            </button>
         </div>
         <div class="six-offers">     
-            <img class="img-row1" src="public/img/homepage_mccafe.jpg">
-            <h2 class="h2header">McCafé® Rewards</h2>
+            <img class="img-row1" src="public/img/homepage_mccafe.jpg"
+            alt="learn nutrition facts about menu items">
+            <h2 class="h2header">
+                McCafé® Rewards</h2>
             <p class="paragraph">
                 Download our App to earn rewards and 
                 <br/>access deals on McCafé drinks.  
             </p>
             <button><a href="https://www.mcdonalds.com/us/en-us/mccafe/rewards.html">
-                Learn More</a></button>
+                Learn More</a>
+            </button>
         </div>
-    <!-- </section> -->
-<!-- end row1-3columns-six-offers section -->
-<!-- begin row2-3columns-six-offers section -->
-    <div class="six-offers">               
-        <img class="img-row2" src="public/img/homepg_StillLife_Bike_3col_376x252.jpg">
-        <h2 class="h2header">McCafé® in Stores</h2>
-        <p class="paragraph">
-            Real milk. Real sugar. Real ahh. 
-            <br/>Now at select retailers near you.
-        </p>
-        <button><a href="https://www.mcdonalds.com/us/en-us/mccafe-in-stores/on-the-go.html">Tell Me More</a></button>
-    </div>
-    <div class="six-offers">
-        <img class="img-row2" src="public/img/homepage_Golden-Arches.jpg">
-        <h2 class="h2header">Golden Arches <br/>Unlimited</h2>
-        <p class="paragraph">
-            Want McDonald’s merch? Check out our store for 
-            <br/>t-shirts, winter wear, gifts and more!
-        </p>
-        <button><a href="https://goldenarchesunlimited.com/">
-            Buy McDonald's Merchandise</a></button>
-    </div>
-    <div class="six-offers">            
-        <div>
-            <img class="img-row1" src="public/img/homepg_dollar_menu_760x508.jpg">
-            <h2 class="h2header">$1 Any Size Soft Drink & $2 Small McCafé®</h2>
+        <div class="six-offers">               
+            <img class="img-row2" src="public/img/homepg_StillLife_Bike_3col_376x252.jpg"
+            alt="learn nutrition facts about menu items">
+            <h2 class="h2header">McCafé® in Stores</h2>
             <p class="paragraph">
-                Plus, even more of your favorites on the  
-                <br/>$1 $2 $3 Dollar Menu.
+                Real milk. Real sugar. Real ahh. 
+                <br/>Now at select retailers near you.
             </p>
-            <button><a href="https://www.mcdonalds.com/us/en-us/full-menu/123dollarmenu.html">
-                Learn More</a></button>
+            <button><a href="https://www.mcdonalds.com/us/en-us/mccafe-in-stores/on-the-go.html">
+                Tell Me More</a>
+            </button >
         </div>
-    </div>
-</section>
-<!-- end row2-3columns-six-offers section -->
-<!-- Begin social-media-icons-section and googleplay-apple-apps-download section -->
-<section class="six-social-media-icons">
-    <!-- Begin 6-social-media-icons section -->
-    
-    <ul class="six-footer-icon-links">
-        <li class="six-footer-icon-links"><a href="http://facebook.com/McDonaldsUS" target="_blank">
-            <img src="public/img/icons-black-no-bg-facebook.png" 
-            width="40" height="40" alt="facebook-icon"/>
-        </a></li>
-        <li class="6-footer-icon-links" style="padding:10px 10px;"><a href="https://twitter.com/intent/tweet?text=https://www.mcdonalds.com/us/en-us.html" target="_blank">
-            <img src="public/img/icons-black-no-bg-twitter.png" 
-            width="40" height="40" alt="twitter-icon"/>
-        </a></li>
-        <li class="6-footer-icon-links" style="padding:10px 10px;"><a href="https://www.instagram.com/McDonalds/" target="_blank">
-            <img src="public/img/icons-black-no-bg-instagram.png" 
-            width="40" height="40" alt="instagram-icon"/>
-        </a></li>
-        <li class="6-footer-icon-links" style="padding:10px 10px;"><a href="https://www.youtube.com/c/McDonalds" target="_blank">
-            <img src="public/img/icons-black-no-bg-youtube.png" 
-            width="40" height="40" alt="youtube-icon"/>
-        </a></li>
-    </ul>
-</section>                   
-<!-- end 6-social-media-icons section -->   
-<!-- Begin googleplay-apple-download section -->
-<section class="two-download-icons">
-<div class="googleplay-apple-apps">
-    <a href="https://play.google.com/store/apps/details?id=com.mcdonalds.app&hl=en">
-        <img src="/public/img/badge-googleplay.png" 
-        width="161" height="56" alt="googleplay-download"/>
-    </a>        
-    <a href="https://apps.apple.com/us/app/mcdonalds/id922103212">
-        <img src="/public/img/badge-appleappstore.png" 
-        width="161" height="56" alt="appleplay-download"/>
-    </a>
-</div>
-<!-- end googleplay-apple-download section -->
-</section>
-<!-- end social-media-icons-section and googleplay-apple-apps-download section  -->
-</main>
-<!-- end the main-content section -->
+        <div class="six-offers">
+            <img class="img-row2" src="public/img/homepage_Golden-Arches.jpg"
+            alt="learn nutrition facts about menu items">
+            <h2 class="h2header">Golden Arches <br/>Unlimited</h2>
+            <p class="paragraph">
+                Want McDonald’s merch? Check out our store for 
+                <br/>t-shirts, winter wear, gifts and more!
+            </p>
+            <button><a href="https://goldenarchesunlimited.com/">
+                Buy McDonald's Merchandise</a>
+            </button>
+        </div>
+        <div class="six-offers">            
+            <div>
+                <img class="img-row1" src="public/img/homepg_dollar_menu_760x508.jpg"
+                alt="learn nutrition facts about menu items">
+                <h2 class="h2header">$1 Any Size Soft Drink & $2 Small McCafé®</h2>
+                <p class="paragraph">
+                    Plus, even more of your favorites on the  
+                    <br/>$1 $2 $3 Dollar Menu.
+                </p>
+                <button><a href="https://www.mcdonalds.com/us/en-us/full-menu/123dollarmenu.html">
+                    Learn More</a>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- end two rows with six menu item choices section -->
+    <!-- Begin social-media-icons-section and googleplay-apple-apps-download section -->
+    <section class="six-social-media-icons">
+        <!-- Begin 6-social-media-icons section -->        
+        <ul class="six-footer-icon-links">
+            <li class="six-footer-icon-links">
+                <a role="link" href="http://facebook.com/McDonaldsUS" target="_blank">
+                <img src="public/img/icons-black-no-bg-facebook.png" 
+                width="40" height="40" alt="facebook-icon"/>
+                </a>
+            </li>
+            <li class="6-footer-icon-links" style="padding:10px 10px;">
+                <a role="link" href="https://twitter.com/intent/tweet?text=https://www.mcdonalds.com/us/en-us.html" target="_blank">
+                <img src="public/img/icons-black-no-bg-twitter.png" 
+                width="40" height="40" alt="twitter-icon"/>
+                </a>
+            </li>
+            <li class="6-footer-icon-links" style="padding:10px 10px;">
+                <a role="link" href="https://www.instagram.com/McDonalds/" target="_blank">
+                <img src="public/img/icons-black-no-bg-instagram.png" 
+                width="40" height="40" alt="instagram-icon"/>
+                </a>
+            </li>
+            <li class="6-footer-icon-links" style="padding:10px 10px;">
+                <a role="link" href="https://www.youtube.com/c/McDonalds" target="_blank">
+                <img src="public/img/icons-black-no-bg-youtube.png" 
+                width="40" height="40" alt="youtube-icon"/>
+                </a>
+            </li>
+        </ul>
+    </section>                   
+    <!-- end 6-social-media-icons section -->   
+    <!-- Begin googleplay-apple-download section -->
+    <section role="complementary" 
+    aria-label="begin google play and apple downloads choices" 
+    class="two-download-icons">
+        <article class="googleplay-apple-apps">
+            <a role="link" href="https://play.google.com/store/apps/details?id=com.mcdonalds.app&hl=en">
+                <img src="/public/img/badge-googleplay.png" 
+                width="161" height="56" alt="googleplay-download"/>
+            </a>        
+            <a role="link" href="https://apps.apple.com/us/app/mcdonalds/id922103212">
+                <img src="/public/img/badge-appleappstore.png" 
+                width="161" height="56" alt="appleplay-download"/>
+            </a>
+        </article>
+    <!-- end googleplay-apple-download section -->
+    </section>
+    <!-- end social-media-icons-section and googleplay-apple-apps-download section  -->
+    </main>
+    <!-- end the main-content section -->
 
 <!-- begin footer section -->
-<footer>
-    <section class="top-footer-menu">    
+<footer role="contentinfo" style="color:#292929; font-size:18px;">
+    <section class="top-footer-menu">  
         <ul class="six-footer-menus">
             <li>
                 About Us
@@ -281,7 +326,8 @@ transition:all .4s ease-in-out;">
             <li>Recalls and Alerts</li>
             <li>Digital Accessibility</li>
         </ul>
-        <ul class="six-footer-menus">
+        <ul class="six-footer-menus" 
+        style="color:#292929;">
             <li>
                 Careers
             </li>
@@ -291,7 +337,8 @@ transition:all .4s ease-in-out;">
             <li>Working with Us</li>
             <li>Apply Now</li>
         </ul>
-        <ul class="six-footer-menus">
+        <ul class="six-footer-menus" 
+        style="color:#292929;">
             <li>
                 Services
             </li>
@@ -301,7 +348,8 @@ transition:all .4s ease-in-out;">
             <li>McDelivery</li>
             <li>Mobile Order and Pay</li>
         </ul>
-        <ul class="six-footer-menus">
+        <ul class="six-footer-menus" 
+        style="color:#292929;">
             <li>
                 Community
             </li>
@@ -309,7 +357,8 @@ transition:all .4s ease-in-out;">
             <li>McDonald's International</li>
             <li>Black and Positively Golden</li>
         </ul>
-        <ul class="six-footer-menus">
+        <ul class="six-footer-menus" 
+        style="color:#292929;">
             <li>
                 Contact Us
             </li>
@@ -321,20 +370,26 @@ transition:all .4s ease-in-out;">
         </ul>
     </section>
 <hr/>
-    <section class="main-footer-section">
+    <section class="main-footer-section" 
+    style="color:#292929;">
         <ul class="main-footer-menu">
-            <a href="https://www.mcdonalds.com/us/en-us/contact-us.html"><li>Contact Us</li></a>
-            <a href="https://www.mcdonalds.com/us/en-us/privacy.html"><li>Privacy(Updated)</li></a>
-            <a href="https://www.mcdonalds.com/us/en-us/terms-and-conditions.html"><li>Terms and Conditions</li></a>
-            <a href="https://www.mcdonalds.com/us/en-us/accessibility.html"><li>Accessibility</li></a>
+            <li><a href="https://www.mcdonalds.com/us/en-us/contact-us.html">
+                Contact Us</a></li>
+            <li><a href="https://www.mcdonalds.com/us/en-us/privacy.html">
+                Privacy(Updated)</a></li>
+            <li><a href="https://www.mcdonalds.com/us/en-us/terms-and-conditions.html">
+                Terms and Conditions</a></li>
+            <li><a href="https://www.mcdonalds.com/us/en-us/accessibility.html">
+                Accessibility</a></li>
         </ul>
-        <div class="copyright">
-            <a href="https://mcdonalds-menu.netlify.com/">        
-                <img class="img-logo" src="./public/img/homepg-logo_48x48.png" 
-                alt="mcdonalds-logo"/>
-            </a>
-            <p>© 2017 - 2019 McDonald's All Rights Reserved</p>
-        </div>
+    </section>
+    <section class="copyright" style="color:#292929;">
+        <a role="link" href="https://mcdonalds-menu.netlify.com/">        
+            <img class="img-logo" 
+            src="./public/img/homepg-logo_48x48.png" 
+            alt="mcdonalds-logo"/>
+        </a>
+        <p>© 2017 - 2019 McDonald's All Rights Reserved</p>
     </section>
 </footer>
 <!-- end footer section -->  
@@ -346,7 +401,7 @@ transition:all .4s ease-in-out;">
             "public/img-slider/image"+(i++ % 4)+".jpg";
         }
         function slider(){
-            setInterval(change_image, 3000);
+            setInterval(change_image, 2200);
         }    
 </script>
 <!-- end javascript function to run the slideshow on page load -->
