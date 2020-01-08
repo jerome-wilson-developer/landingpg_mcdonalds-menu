@@ -69,12 +69,14 @@ footer .six-footer-menus{
     display:flex;
     margin-left:150px;
     margin-bottom:20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .copyright .img-logo{
     padding-right:15px;
 }
 .copyright .img-logo p{
     vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Tablet View */
