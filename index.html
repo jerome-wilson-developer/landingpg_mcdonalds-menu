@@ -15,7 +15,7 @@
 <!-- begin disclaimer section -->
 <tr>
     <td>
-  <table role="layout" class="disclaimer" width="100%" align="center" border="0" 
+  <table tabindex="-1" class="disclaimer" width="100%" align="center" border="0" 
   cellspacing="0" cellpadding="0" style="background-color:gold; 
   text-align:left; margin:0; padding:0;">
   <tr>
@@ -55,12 +55,12 @@
             font-size:.9rem; letter-spacing:1px;">
                   TECHNOLOGIES USED:
             </span>
-            <br/> html tables, html5, css3, javascript, responsive, web accessibility,
-                  <a align="center" href="https://github.com/jerome-wilson-developer/landingpg_mcdonalds-menu" target="_blank">
+            <br/>html5, css3, javascript, mobile responsive, npm, webpack, web accessibility, NVDA,
+                  <a tabindex="-1" align="center" href="https://github.com/jerome-wilson-developer/landingpg_mcdonalds-menu" target="_blank">
                     GITHUB
-                  </a>, npm, webpack,  
-                  <a href="https://mcdonalds-menu.netlify.com/" target="_blank">
-                    NETLIFY</a>, lighthouse audit, NVDA, etc.
+                  </a>, lighthouse audit, 
+                  <a tabindex="-1" href="https://mcdonalds-menu.netlify.com/" target="_blank">
+                    NETLIFY</a>.
         <hr/>
         <a align="center" style="padding:5px 3px 5px 5px;">
           <img src="/public/img/icon-html5-png-128x128.png" 
@@ -95,7 +95,7 @@
 <!-- end disclaimer section -->
 <hr/>
 <!-- begin header navigation for the top-menu-1, top-menu-2, and the main-menu sections -->
-<header role="banner" class="header">
+<header tabindex="0" role="banner" class="header">
 <!-- add mcdonald's golden arches logo -->
     <nav id="main-nav-wrapper" class="top-img-logo">
         <section role="logo">
@@ -116,24 +116,18 @@
         </ul>
     <!-- end top-menu-1 section -->    
     <!-- begin top-menu-2 section -->
-        <ul role="navigation" 
-        aria-label = "top-right-menu" 
+        <ul style="margin-left:300px;" role="navigation" 
+        aria-label="top-right-menu" 
         class="top-menu-2">
-            <!-- <li>
-                <a role="search" href="https://www.mcdonalds.com/us/en-us/search-results.html">
+            <li>
+                <i class="fas fa-search"></i>
+            </li>
+            <li>
+                <a role="search" 
+                href="https://www.mcdonalds.com/us/en-us/search-results.html">
                 Search
                 </a>
-            </li> -->
-            <li>
-                <a role="search" href="https://www.mcdonalds.com/us/en-us/restaurant-locator.html">
-                Find locations
-                </a>
             </li>
-            <!-- <li>
-                <a role="link" href="https://www.mcdonalds.com/us/en-us/about-our-food.html">
-                    About Our Food
-                </a>
-            </li> -->
         </ul>
         <!-- end top-menu-2 section -->
     </nav>   
@@ -389,7 +383,9 @@ transition:all .4s ease-in-out;">
             src="./public/img/homepg-logo_48x48.png" 
             alt="mcdonalds-logo"/>
         </a>
-        <p>© 2017 - 2019 McDonald's All Rights Reserved</p>
+        <p style="font-size:12px; margin-top:28px;">
+            © 2017 - 2019 McDonald's All Rights Reserved
+        </p>
     </section>
 </footer>
 <!-- end footer section -->  
