@@ -1,11 +1,19 @@
-# email_landingpg-mcdonalds-menu
+# Landing Pages
 
-This is a landing page clone of McDonald's menu website. This website appears when you click to sign into their free wifi at their restaurants. I was impressed with the power and simplicity of the design and the high-quality images. I re-built this website with pure html5, css3, and javascript. 
+## McDonalds menu landing page
+This is a clone of the landing page displayed for guest at McDonald's who use their free wifi. I rebuilt it as a great example of minimalist artwork that maximizes white space, imagery, spacing, positioning, content, and ux/ui design strategies. It is a great example of ... "Less is More". 
 
-TECHNOLOGIES USED: html5, css3, javascript, mobile responsive, web accessible, GITHUB , npm, NETLIFY .
+## TECHNOLOGIES USED: 
+html5, css3, javascript, mobile responsive, web accessible, GITHUB , npm, webpack, NETLIFY, lighthouse audit, NVDA, etc.
 
-DISCLAIMER: This corporation's "email clone" is for Demonstration Purposes Only. No infringements are intended against their corporate copyrights, trademarks, patents, intellectual properties, or any other proprietary assets.
+## DISCLAIMER: 
+The "corporation clones" below are for Demonstration Purposes Only. No infringements are intended against any corporate copyrights, trademarks, intellectual properties, or other proprietary assets. All images are the property of its respective owners. Please contact me if there are any issues. Thank you! 
 
-Github pages link: https://github.com/jerome-wilson-developer/landingpg_mcdonalds-menu
+## ACCESSIBILITY: 
+I used accessibility code to increase this page's web accessibility. I mostly used aria-role landmarks and tabindex code to increase focus and access. There is a strong movement in the web development world to build and code web content that is accessible to everybody. Lawsuits and accessility standards are happenning regularly. Some statistics report there are over 1 billion people worldwide who have difficulties using web content because of different disabilities. 
 
-Netlify link: https://mcdonalds-menu.netlify.com/
+### Github pages link: 
+https://jerome-wilson-developer.github.io/landingpg_mcdonalds-menu/
+
+### Netlify link: 
+https://mcdonalds-menu.netlify.com/
