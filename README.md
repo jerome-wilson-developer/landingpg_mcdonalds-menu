@@ -1,4 +1,6 @@
-# Landing Page-mcdonalds-menu
+# Landing Pages
+
+## McDonalds menu landing page
 This is a clone of the landing page displayed for guest at McDonald's who use their free wifi. I rebuilt it as a great example of minimalist artwork that maximizes white space, imagery, spacing, positioning, content, and ux/ui design strategies. It is a great example of ... "Less is More". 
 
 ## TECHNOLOGIES USED: 
